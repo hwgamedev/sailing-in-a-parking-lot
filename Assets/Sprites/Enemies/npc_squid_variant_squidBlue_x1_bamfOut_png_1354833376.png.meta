@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 4662030e67569c740aace7d4061835d4
+guid: 7109b49a4812efa4b86cad0f7a9b9f33
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hell_yelling_head_0
-    21300002: hell_yelling_head_1
-    21300004: hell_yelling_head_2
-    21300006: hell_yelling_head_3
-    21300008: hell_yelling_head_4
-    21300010: hell_yelling_head_5
-    21300012: hell_yelling_head_6
+    21300000: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_0
+    21300002: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_1
+    21300004: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_2
+    21300006: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_3
+    21300008: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_4
+    21300010: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_5
+    21300012: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_6
+    21300014: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,7 +30,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 1024
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -50,73 +51,83 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: hell_yelling_head_0
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 370
-        width: 176
-        height: 208
+        y: 502
+        width: 234
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_1
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_1
       rect:
         serializedVersion: 2
-        x: 178
-        y: 381
-        width: 176
-        height: 197
+        x: 234
+        y: 502
+        width: 234
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_2
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_2
       rect:
         serializedVersion: 2
-        x: 357
-        y: 382
-        width: 175
-        height: 196
+        x: 468
+        y: 502
+        width: 234
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_3
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 179
-        width: 176
-        height: 188
+        y: 251
+        width: 234
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_4
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_4
       rect:
         serializedVersion: 2
-        x: 179
-        y: 190
-        width: 175
-        height: 188
+        x: 234
+        y: 251
+        width: 234
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_5
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_5
       rect:
         serializedVersion: 2
-        x: 357
-        y: 191
-        width: 175
-        height: 188
+        x: 468
+        y: 251
+        width: 234
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_6
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_6
       rect:
         serializedVersion: 2
-        x: 356
-        y: 1
-        width: 176
-        height: 188
+        x: 0
+        y: 0
+        width: 234
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_squid_variant_squidBlue_x1_bamfOut_png_1354833376_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 234
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
