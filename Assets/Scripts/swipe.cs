@@ -6,8 +6,10 @@ public class swipe : MonoBehaviour {
 	private bool swiping = false;
 	private bool eventSent = false;
 	private Vector2 lastPosition;
+	public bool up, down, left, right;
 	
 	void Update () {
+		up = down = left = right = false;
 		Debug.Log ("a");
 		if (Input.touchCount == 0) 
 			return;
@@ -26,15 +28,15 @@ public class swipe : MonoBehaviour {
 					
 					if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)){
 						if (direction.x > 0) 
-							Debug.Log ("RIGHT");
+							right = true;
 						else
-							Debug.Log ("LEFT");
+							left = true;
 					}
 					else{
 						if (direction.y > 0)
-							Debug.Log ("UP");
+							up = true;
 						else
-							Debug.Log ("DOWN");
+							down = true;
 					}
 					
 					eventSent = true;
