@@ -13,7 +13,7 @@ public class ChickenMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		moving.x = moving.y = 0;
-		
+
 		if (Input.GetKey("right"))
 		{
 			moving.x = 1;
@@ -31,5 +31,15 @@ public class ChickenMovement : MonoBehaviour {
 		{
 			moving.y = -1;
 		}
+
+		Debug.Log (DeviceRotation.getZRoll ());
+		moving.x = (DeviceRotation.getZRoll () - 180)/180;
+		if (Input.touchCount > 0) {
+			moving.y = 1;
+		}
+
+		DeviceRotation.Get ();
+
+
 	}
 }
