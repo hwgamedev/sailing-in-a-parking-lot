@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 9fea910ee5de0e940a24d15cbcba41bf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: npc_chicken__x1_fall_png_1354830392_0
+    21300002: npc_chicken__x1_fall_png_1354830392_1
+    21300004: npc_chicken__x1_fall_png_1354830392_2
+    21300006: npc_chicken__x1_fall_png_1354830392_3
+    21300008: npc_chicken__x1_fall_png_1354830392_4
+    21300010: npc_chicken__x1_fall_png_1354830392_5
+    21300012: npc_chicken__x1_fall_png_1354830392_6
+    21300014: npc_chicken__x1_fall_png_1354830392_7
+    21300016: npc_chicken__x1_fall_png_1354830392_8
+    21300018: npc_chicken__x1_fall_png_1354830392_9
+    21300020: npc_chicken__x1_fall_png_1354830392_10
+    21300022: npc_chicken__x1_fall_png_1354830392_11
+    21300024: npc_chicken__x1_fall_png_1354830392_12
+    21300026: npc_chicken__x1_fall_png_1354830392_13
+    21300028: npc_chicken__x1_fall_png_1354830392_14
+    21300030: npc_chicken__x1_fall_png_1354830392_15
+    21300032: npc_chicken__x1_fall_png_1354830392_16
+    21300034: npc_chicken__x1_fall_png_1354830392_17
+    21300036: npc_chicken__x1_fall_png_1354830392_18
+    21300038: npc_chicken__x1_fall_png_1354830392_19
+    21300040: npc_chicken__x1_fall_png_1354830392_20
+    21300042: npc_chicken__x1_fall_png_1354830392_21
+    21300044: npc_chicken__x1_fall_png_1354830392_22
+    21300046: npc_chicken__x1_fall_png_1354830392_23
+    21300048: npc_chicken__x1_fall_png_1354830392_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: npc_chicken__x1_fall_png_1354830392_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 465
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 464
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_2
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 463
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_3
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 462
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 460
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 349
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 347
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_7
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 345
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_8
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 336
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_9
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 333
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 223
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_11
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 222
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_12
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 222
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_13
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 221
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_14
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 221
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_15
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 110
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_16
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 110
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_17
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 110
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_18
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 110
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_19
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 110
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_20
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_21
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_22
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 0
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_23
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: npc_chicken__x1_fall_png_1354830392_24
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 0
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
