@@ -8,10 +8,12 @@ public class ChickenController : MonoBehaviour {
 	public float jumpSpeed = 15f;    
 	public float airSpeedMultiplier = .3f;
 	public bool standing;
+	public bool frontCollision;
 
 	//checker for ground
 	public Transform toGroundL;
 	public Transform toGroundR;
+	public Transform toFront;
 
 
 	private ChickenMovement controller;
@@ -30,14 +32,18 @@ public class ChickenController : MonoBehaviour {
 
 		Vector3 followL = toGroundL.transform.position;
 		Vector3 followR = toGroundR.transform.position;
+		Vector3 front = toFront.transform.position;
 		Debug.DrawLine(transform.position, followL, Color.green);
 		Debug.DrawLine(transform.position, followR, Color.green);
+		Debug.DrawLine(transform.position, front, Color.green);
 
 		
 		bool standingPrev = standing;
 		if(!checkGrounded (followL) && !checkGrounded (followR) && standingPrev)
 			standing = false;
 	
+		checkFrontCollisions (front);
+
 		var forceX = 0f;
 		var forceY = 0f;
 		
@@ -49,7 +55,7 @@ public class ChickenController : MonoBehaviour {
 			if (absVelocityX < maxVelocity.x)
 			{
 				forceX = standing ? (speed * controller.moving.x) : (speed * controller.moving.x * airSpeedMultiplier);
-				
+
 				transform.localScale = new Vector3(forceX > 0 ? 1 : -1, 1, 1);
 			}
 			animator.SetInteger("animState", 1);
@@ -79,8 +85,9 @@ public class ChickenController : MonoBehaviour {
 				animator.SetInteger ("animState",2);
 
 		}
-		
-		rigidbody2D.AddForce(new Vector2(forceX, 0));
+
+		if(!frontCollision)
+			rigidbody2D.AddForce(new Vector2(forceX, 0));
 	}
 
 	bool checkGrounded(Vector3 endOfLine) {
@@ -96,5 +103,22 @@ public class ChickenController : MonoBehaviour {
 		}
 
 		return standingChanged;
+	}
+
+	void checkFrontCollisions(Vector3 endOfLine) {
+		bool noCollisions = true;
+
+		//RaycastHit hit;
+		RaycastHit2D[] hits = Physics2D.LinecastAll (transform.position, endOfLine);
+		
+		for(var i = 0; i < hits.Length; i++) {
+			if((hits[i].collider.tag != "Player")) {
+				frontCollision = true;
+				noCollisions = false;
+			}
+		}
+
+		if (noCollisions)
+						frontCollision = false;
 	}
 }
