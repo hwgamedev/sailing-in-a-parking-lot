@@ -13,6 +13,8 @@ GameObject:
   - 95: {fileID: 9593084}
   - 61: {fileID: 6193084}
   - 114: {fileID: 11493084}
+  - 114: {fileID: 11473950}
+  - 114: {fileID: 11473952}
   m_Layer: 4
   m_Name: WaterEnemy
   m_TagString: Untagged
@@ -73,6 +75,31 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11473950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82dd1756e83d4b44b9cc2d816bf77a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sightDistance: 5
+  sawPlayer: 0
+--- !u!114 &11473952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c846896f93cd48d4ba2e6f9e536d8ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vanishTime: 3
 --- !u!114 &11493084
 MonoBehaviour:
   m_ObjectHideFlags: 1
