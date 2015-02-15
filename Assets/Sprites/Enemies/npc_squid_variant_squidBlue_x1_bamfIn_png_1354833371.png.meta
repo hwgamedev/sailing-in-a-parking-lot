@@ -1,18 +1,16 @@
 fileFormatVersion: 2
-guid: 186d7375d7d547047b8c9b42d6a3d489
+guid: c0acea7900a5b1b479539ce97ae08664
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hell_yelling_head_v2_0
-    21300002: hell_yelling_head_v2_1
-    21300004: hell_yelling_head_v2_2
-    21300006: hell_yelling_head_v2_3
-    21300008: hell_yelling_head_v2_4
-    21300010: hell_yelling_head_v2_5
-    21300012: hell_yelling_head_v2_6
-    21300014: hell_yelling_head_v2_7
-    21300016: hell_yelling_head_v2_8
-    21300018: hell_yelling_head_v2_9
-    21300020: hell_yelling_head_v2_10
+    21300000: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_0
+    21300002: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_1
+    21300004: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_2
+    21300006: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_3
+    21300008: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_4
+    21300010: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_5
+    21300012: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_6
+    21300014: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_7
+    21300016: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -33,7 +31,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 1024
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -54,113 +52,93 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: hell_yelling_head_v2_0
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 371
-        width: 176
-        height: 208
+        y: 502
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_1
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_1
       rect:
         serializedVersion: 2
-        x: 178
-        y: 382
-        width: 176
-        height: 197
+        x: 235
+        y: 502
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_2
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_2
       rect:
         serializedVersion: 2
-        x: 357
-        y: 383
-        width: 175
-        height: 196
+        x: 470
+        y: 502
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_3
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_3
       rect:
         serializedVersion: 2
-        x: 534
-        y: 391
-        width: 176
-        height: 188
+        x: 0
+        y: 251
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_4
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 180
-        width: 175
-        height: 188
+        x: 235
+        y: 251
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_5
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_5
       rect:
         serializedVersion: 2
-        x: 178
-        y: 192
-        width: 176
-        height: 187
+        x: 470
+        y: 251
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_6
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_6
       rect:
         serializedVersion: 2
-        x: 356
-        y: 193
-        width: 176
-        height: 187
+        x: 0
+        y: 0
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_7
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_7
       rect:
         serializedVersion: 2
-        x: 534
-        y: 201
-        width: 176
-        height: 188
+        x: 235
+        y: 0
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_8
+    - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_8
       rect:
         serializedVersion: 2
-        x: 179
-        y: 1
-        width: 175
-        height: 188
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_9
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 2
-        width: 175
-        height: 188
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: hell_yelling_head_v2_10
-      rect:
-        serializedVersion: 2
-        x: 535
-        y: 11
-        width: 175
-        height: 188
+        x: 470
+        y: 0
+        width: 235
+        height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
