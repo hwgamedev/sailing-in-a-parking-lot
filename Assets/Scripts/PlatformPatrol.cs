@@ -3,42 +3,43 @@ using System.Collections;
 
 public class PlatformPatrol : MonoBehaviour {
 	public float maxSpeed = 1f;
-	public bool facingRight = true;
 	public float moveRadius = 10f;
-	float distanceToOrigin =0;
+	float origin = 0f;
 	public bool startToRight = true;
 	float move;
-	public bool flip = true;
+	public bool horizontal = true;
 	
 	void Start () {
 		if (startToRight)
 			move = 1;
 		else
 			move = -1;
+		if (horizontal) {
+			origin = rigidbody2D.position.x;
+		} else {
+			origin = rigidbody2D.position.y;
+		}
 	}
 	
 	void Update () {
-		if (distanceToOrigin > moveRadius)
-			move = -1;
-		else
-			if (distanceToOrigin < -moveRadius)
+		if (horizontal) {
+			if(rigidbody2D.position.x > origin+moveRadius){
+				rigidbody2D.position = new Vector2(origin+moveRadius, rigidbody2D.position.y);
+				move = -1;
+			} else if(rigidbody2D.position.x < origin-moveRadius){
+				rigidbody2D.position = new Vector2(origin-moveRadius, rigidbody2D.position.y);
 				move = 1;
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
-		distanceToOrigin += move * maxSpeed;
-		if (move < 0 && facingRight)
-			Flip ();
-		else
-			if (move > 0 && !facingRight)
-				Flip ();
-	}
-	
-	void Flip ()
-	{
-		if (flip) {
-			facingRight = !facingRight;
-			Vector3 scale = transform.localScale;
-			scale.x *= -1;
-			transform.localScale = scale;
+			}
+			rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+		} else {
+			if(rigidbody2D.position.y > origin+moveRadius){
+				rigidbody2D.position = new Vector2(rigidbody2D.position.x ,origin+moveRadius);
+				move = -1;
+			} else if(rigidbody2D.position.y < origin-moveRadius){
+				rigidbody2D.position = new Vector2(rigidbody2D.position.x ,origin-moveRadius);
+				move = 1;
+			}
+			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, move * maxSpeed);
 		}
 	}
 	
