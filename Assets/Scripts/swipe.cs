@@ -3,7 +3,7 @@ using System.Collections;
 
 public class swipe : MonoBehaviour {
 
-	private bool swiping = false;
+	public bool swiping = false;
 	private bool eventSent = false;
 	private Vector2 lastPosition;
 	public bool up, down, left, right;
