@@ -15,7 +15,6 @@ public class RockProjectile : MonoBehaviour
 		if (renderer.isVisible) seen = true;
 		if (seen && !renderer.isVisible)
 		{
-			Debug.Log("DELETE");
 			GameObject.Destroy (gameObject);
 		}
 
