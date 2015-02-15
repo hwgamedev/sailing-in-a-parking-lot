@@ -11,10 +11,13 @@ public class ChickenAttack : MonoBehaviour {
 	private float instanceSpeed;
 	private swipe swipeComponent;
 	private float weaponDirection;
+    private SpriteRenderer spriteRenderer;
+    private MagicCombiner magic;
 	
 	// Use this for initialization
 	void Start () {
 		swipeComponent = GetComponent<swipe> ();
+        magic = FindObjectOfType(typeof(MagicCombiner)) as MagicCombiner;
 	}
 	
 	// Update is called once per frame
@@ -53,6 +56,28 @@ public class ChickenAttack : MonoBehaviour {
         //weaponInstance.transform.parent = transform;
         rotation = 0;
 		instanceSpeed = weaponSpeed;
+        spriteRenderer = weaponInstance.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = magicColor();
 
 	}
+
+    Color magicColor()
+    {
+        if(magic.earthOn && magic.attackOn)
+    {
+        return Color.green;
+    }
+        else if (magic.fireOn && magic.attackOn)
+        {
+            return Color.red;
+        }
+        else if (magic.windOn && magic.attackOn)
+        {
+            return Color.blue;
+        }
+        else
+        {
+            return new Color(0.0f, 0.0f, 0.0f, 0.0f);
+        }
+    }
 }
