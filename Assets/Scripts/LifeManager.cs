@@ -98,7 +98,7 @@ public class LifeManager : MonoBehaviour {
         chunkhead.rigidbody2D.AddForce(Vector3.up * Random.Range(300, 1000));
         for (int i = 1; i < 6; i++)
         {
-            print("Chunk");
+            //print("Chunk");
             
             GameObject chunk = Instantiate(chunks[i], transform.position, Quaternion.identity) as GameObject;
             chunks[i].rigidbody2D.AddForce(Vector3.right * Random.Range(-25, 25));
