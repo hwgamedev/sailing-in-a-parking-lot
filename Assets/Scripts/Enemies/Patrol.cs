@@ -5,30 +5,29 @@ public class Patrol : MonoBehaviour {
 	public float maxSpeed = 1f;
 	public bool facingRight = true;
 	public float moveRadius = 10f;
-	float distanceToOrigin =0;
 	public bool startToRight = true;
-	float move;
+
+	public Vector2 left, right;
 
 	void Start () {
-		if (startToRight)
-			move = 1;
-		else
-			move = -1;
+
+		if ((startToRight && !facingRight) || (!startToRight && facingRight))
+			Flip ();
+
+		left = new Vector2 (rigidbody2D.position.x - moveRadius, rigidbody2D.position.y);
+		right = new Vector2 (rigidbody2D.position.x + moveRadius, rigidbody2D.position.y);
 	}
 
 	void Update () {
-		if (distanceToOrigin > moveRadius)
-			move = -1;
-		else
-			if (distanceToOrigin < -moveRadius)
-				move = 1;
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
-		distanceToOrigin += move * maxSpeed;
-		if (move < 0 && facingRight)
+		print (rigidbody2D.position.x);
+		if ((rigidbody2D.position.x <= left.x && !facingRight) || (rigidbody2D.position.x >= right.x && facingRight))
 			Flip ();
-		else
-			if (move > 0 && !facingRight)
-				Flip ();
+
+
+
+		float step = maxSpeed * Time.deltaTime;
+		transform.position = Vector3.MoveTowards(rigidbody2D.position, new Vector3(facingRight?right.x:left.x, rigidbody2D.position.y, transform.position.z), step);
+
 	}
 
 	void Flip ()
