@@ -29,6 +29,7 @@ public class LifeManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        chunks = Resources.LoadAll<GameObject>("Prefabs/Explode");
         chunks = Resources.LoadAll<GameObject>("Prefabs/ChickExplode");
 		hm = GameObject.FindGameObjectWithTag ("healthbar").GetComponent<HeartManager> ();
 		invincibilityRemaining = invincibilityTime;
@@ -38,8 +39,11 @@ public class LifeManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (health ==0)
         if (alive)
         {
+            die();
+        }
 
 		if(invincibilityRemaining > 0) {
 			invincibilityRemaining -= Time.deltaTime;
@@ -59,7 +63,7 @@ public class LifeManager : MonoBehaviour {
 		}
 
         }
-	}
+
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -82,6 +86,7 @@ public class LifeManager : MonoBehaviour {
 
     public void die()
     {
+        for (int i = 0; i < chunks.Length; i++)
         alive = false;
         AudioSource.PlayClipAtPoint(BWUAK, transform.position);
         GameObject chunkhead = Instantiate(chunks[0], transform.position, Quaternion.identity) as GameObject;
@@ -89,14 +94,22 @@ public class LifeManager : MonoBehaviour {
         chunkhead.rigidbody2D.AddForce(Vector3.up * Random.Range(300, 1000));
         for (int i = 1; i < 6; i++)
         {
+            print("Chunk");
             
             GameObject chunk = Instantiate(chunks[i], transform.position, Quaternion.identity) as GameObject;
+            chunks[i].rigidbody2D.AddForce(Vector3.right * Random.Range(-25, 25));
+            chunks[i].rigidbody2D.AddForce(Vector3.up * Random.Range(50, 200));
             chunk.rigidbody2D.AddForce(Vector3.right * Random.Range(-25, 25));
             chunk.rigidbody2D.AddForce(Vector3.up * Random.Range(50, 200));
         }
 		SceneManager sm = GameObject.FindGameObjectsWithTag("SceneManager")[0].GetComponent<SceneManager>();
 		sm.ChangeScene();
         Destroy(gameObject);
+        GameObject[] waterguys = GameObject.FindGameObjectsWithTag("Enemy") as GameObject[];
+        foreach(GameObject waterguy in waterguys)
+        {
+            Destroy(waterguy);
+        }
         
     }
 
