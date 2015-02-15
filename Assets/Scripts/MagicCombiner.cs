@@ -50,6 +50,7 @@ public class MagicCombiner : MonoBehaviour
             if (renderer.bounds.Intersects(_tokens[0].renderer.bounds))
             {
                 attackOn = true;
+                shieldOn = false;
                 Destroy(_tokens[0]);
                 replace(0);
             }
@@ -59,6 +60,7 @@ public class MagicCombiner : MonoBehaviour
             if (renderer.bounds.Intersects(_tokens[1].renderer.bounds))
             {
                 shieldOn = true;
+                attackOn = false;
                 Destroy(_tokens[1]);
                 replace(1);
             }
@@ -68,6 +70,8 @@ public class MagicCombiner : MonoBehaviour
             if (renderer.bounds.Intersects(_tokens[2].renderer.bounds))
             {
                 earthOn = true;
+                windOn = false;
+                fireOn = false;
                 Destroy(_tokens[2]);
                 replace(2);
             }
@@ -76,7 +80,9 @@ public class MagicCombiner : MonoBehaviour
         {
             if (renderer.bounds.Intersects(_tokens[3].renderer.bounds))
             {
+                earthOn = false;
                 windOn = true;
+                fireOn = false;
                 Destroy(_tokens[3]);
                 replace(3);
             }
@@ -85,6 +91,8 @@ public class MagicCombiner : MonoBehaviour
         {
             if (renderer.bounds.Intersects(_tokens[4].renderer.bounds))
             {
+                earthOn = false;
+                windOn = false;
                 fireOn = true;
                 Destroy(_tokens[4]);
                 replace(4);
@@ -159,7 +167,7 @@ public class MagicCombiner : MonoBehaviour
         if (fireOn)
         {
             earthOn = false;
-            fireOn = false;
+            windOn = false;
         }
         if (attackOn)
         {
