@@ -3186,9 +3186,10 @@ GameObject:
   - 114: {fileID: 1801699319}
   - 114: {fileID: 1801699318}
   - 114: {fileID: 1801699317}
+  - 114: {fileID: 1801699324}
   m_Layer: 16
   m_Name: RockEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3316,6 +3317,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 43af88c820adc7244bec3197b4544c10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1801699324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11433744, guid: f18ee33d0c00a78459a2dd36940a0306,
+    type: 2}
+  m_PrefabInternal: {fileID: 517044921}
+  m_GameObject: {fileID: 1801699315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd31346a27decf448db40893fea2d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
+  maxHealth: 50
+  blinkyTime: .200000003
 --- !u!1 &1813190152
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class LifeManager : MonoBehaviour {
 			hm.updateHearts(health);
 			invincibilityRemaining = invincibilityTime;
 			float xDirection = System.Math.Sign (rigidbody2D.velocity.x);
-			rigidbody2D.AddForce (new Vector2(5f*xDirection*-1,5),ForceMode2D.Impulse);
+			rigidbody2D.AddForce (new Vector2(0,5),ForceMode2D.Impulse);
 		}
 	}
 
