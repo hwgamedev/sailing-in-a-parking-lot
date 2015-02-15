@@ -60,7 +60,7 @@ GameObject:
   - 114: {fileID: 11414898}
   - 114: {fileID: 11414896}
   - 114: {fileID: 11400976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chicken
   m_TagString: Player
   m_Icon: {fileID: 0}

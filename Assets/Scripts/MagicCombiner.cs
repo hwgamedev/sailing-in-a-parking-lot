@@ -23,6 +23,7 @@ public class MagicCombiner : MonoBehaviour
         for (int i = 0; i < tokens.Length; i++ )
         {
             _tokens[i] = Instantiate(tokens[i]) as GameObject;
+            _tokens[i].transform.parent = transform;
         }
         sprites = Resources.LoadAll<Sprite>("Sprites/MagicComb/Combiner");
         spriteRenderer = GetComponent<SpriteRenderer>();

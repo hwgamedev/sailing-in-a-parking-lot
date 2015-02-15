@@ -244,8 +244,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996ae4e7e6d1aa8448a9694fdb04b0ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  earthOn: 0
   attackOn: 0
+  shieldOn: 0
+  earthOn: 0
+  windOn: 0
+  fireOn: 0
 --- !u!61 &1677261407
 BoxCollider2D:
   m_ObjectHideFlags: 0
