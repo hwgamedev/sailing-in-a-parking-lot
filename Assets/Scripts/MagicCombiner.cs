@@ -4,12 +4,16 @@ using System.Collections;
 
 public class MagicCombiner : MonoBehaviour
 {
-    public bool earthOn = false;
     public bool attackOn = false;
+    public bool shieldOn = false;
+    public bool earthOn = false;
+    public bool windOn = false;
+    public bool fireOn = false;
+    
 
     private SpriteRenderer spriteRenderer;
-    private GameObject[] tokens = new GameObject[2];
-    private GameObject[] _tokens = new GameObject[2];
+    private GameObject[] tokens = new GameObject[5];
+    private GameObject[] _tokens = new GameObject[5];
     private Sprite[] sprites;
 
 
@@ -30,26 +34,49 @@ public class MagicCombiner : MonoBehaviour
     void Update()
     {
         checkCollisions();
+        updateSprite();
     }
 
     void checkCollisions()
     {
-        if (!earthOn)
+        if (!attackOn)
         {
             if (renderer.bounds.Intersects(_tokens[0].renderer.bounds))
             {
-                earthOn = true;
-                updateSprite();
+                attackOn = true;
                 Destroy(_tokens[0]);
             }
         }
-        if (!attackOn)
+        if (!shieldOn)
         {
             if (renderer.bounds.Intersects(_tokens[1].renderer.bounds))
             {
-                attackOn = true;
-                updateSprite();
+                shieldOn = true;
                 Destroy(_tokens[1]);
+            }
+        }
+        if (!earthOn)
+        {
+            if (renderer.bounds.Intersects(_tokens[2].renderer.bounds))
+            {
+                earthOn = true;
+                Destroy(_tokens[2]);
+            }
+        }
+        if (!windOn)
+        {
+            if (renderer.bounds.Intersects(_tokens[3].renderer.bounds))
+            {
+                windOn = true;
+                Destroy(_tokens[3]);
+            }
+        }
+        if (!fireOn)
+        {
+            if (renderer.bounds.Intersects(_tokens[4].renderer.bounds))
+            {
+                fireOn = true;
+                Destroy(_tokens[4]);
             }
         }
     }
@@ -60,17 +87,76 @@ public class MagicCombiner : MonoBehaviour
         {
             spriteRenderer.sprite = sprites[1];
         }
-        else if (earthOn)
+        else if(windOn && attackOn)
         {
             spriteRenderer.sprite = sprites[2];
         }
-        else if (attackOn)
+        else if (fireOn && attackOn)
         {
             spriteRenderer.sprite = sprites[3];
+        }
+        else if (earthOn && shieldOn)
+        {
+            spriteRenderer.sprite = sprites[4];
+        }
+        else if (windOn && shieldOn)
+        {
+            spriteRenderer.sprite = sprites[5];
+        }
+        else if (fireOn && shieldOn)
+        {
+            spriteRenderer.sprite = sprites[6];
+        }
+        else if (attackOn)
+        {
+            spriteRenderer.sprite = sprites[7];
+        }
+        else if (shieldOn)
+        {
+            spriteRenderer.sprite = sprites[8];
+        }
+        else if (earthOn)
+        {
+            spriteRenderer.sprite = sprites[9];
+        }
+        else if (windOn)
+        {
+            spriteRenderer.sprite = sprites[10];
+        }
+        else if (fireOn)
+        {
+            spriteRenderer.sprite = sprites[11];
         }
         else
         {
             spriteRenderer.sprite = sprites[0];
+        }
+    }
+
+    void removeDuplicates()
+    {
+        if(earthOn)
+        {
+            windOn = false;
+            fireOn = false;
+        }
+        if (windOn)
+        {
+            earthOn = false;
+            fireOn = false;
+        }
+        if (fireOn)
+        {
+            earthOn = false;
+            fireOn = false;
+        }
+        if (attackOn)
+        {
+            shieldOn = false;
+        }
+        if (shieldOn)
+        {
+            attackOn = false;
         }
     }
 }
