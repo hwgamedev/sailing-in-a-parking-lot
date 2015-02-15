@@ -80,7 +80,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414898}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!4 &400974
 Transform:
   m_ObjectHideFlags: 1
@@ -92,7 +92,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414898}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &400976
 Transform:
   m_ObjectHideFlags: 1
@@ -104,7 +104,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414898}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &414898
 Transform:
   m_ObjectHideFlags: 1
@@ -112,12 +112,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: .314999998, z: 0}
+  m_LocalPosition: {x: 25.3700008, y: 1.55999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400972}
   - {fileID: 400976}
   - {fileID: 400974}
-  - {fileID: 400972}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5014898
@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moving: {x: 0, y: 0}
+  facingDirection: 1
 --- !u!114 &11414898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   maxVelocity: {x: 3, y: 5}
-  jumpSpeed: 5
+  jumpSpeed: 6
   airSpeedMultiplier: .300000012
   standing: 0
   frontCollision: 0
@@ -232,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponTemplate: {fileID: 109688, guid: ecd581a5b8f78724ea1c3e7ee169f408, type: 2}
-  weaponSpeed: 25
+  weaponSpeed: 4
 --- !u!212 &21214898
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -251,7 +252,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3376925863
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 88bd220f15d030444a172388a6d06d00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

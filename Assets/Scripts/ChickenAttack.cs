@@ -21,21 +21,27 @@ public class ChickenAttack : MonoBehaviour {
 	void Update () {
 		if(weaponInstance) {
 			//instanceSpeed += weaponSpeed;
-			rotation += instanceSpeed*weaponDirection*-1;
+			rotation += instanceSpeed*-1*weaponDirection;
+
 			//print (rotation);
 			//weaponInstance.transform.RotateAround(transform.position, Vector3.back, rotation*Time.deltaTime);
-			weaponInstance.transform.Rotate (new Vector3(0,0,Mathf.Deg2Rad*rotation));
-			print (weaponInstance.transform.localEulerAngles.z);
-			if(weaponDirection == -1 && Mathf.Abs(weaponInstance.transform.localEulerAngles.z) > 150) {
-				Destroy (weaponInstance);
+
+			Quaternion rot = weaponInstance.transform.rotation;
+			rot.z = Mathf.Deg2Rad*rotation;
+			weaponInstance.transform.position = transform.position;
+			weaponInstance.transform.rotation = rot;
+
+			//print (weaponInstance.transform.localEulerAngles.z);
+			if(Mathf.Abs(weaponInstance.transform.localEulerAngles.z) < 210 && weaponDirection == 1) {
+				Destroy(weaponInstance);
 			}
-			if(weaponDirection == 1 && Mathf.Abs(weaponInstance.transform.localEulerAngles.z) < 210) {
+			else if(Mathf.Abs(weaponInstance.transform.localEulerAngles.z) > 150 && weaponDirection == -1) {
 				Destroy(weaponInstance);
 			}
 		}
 		else {
 			if(swipeComponent.left || swipeComponent.right || Input.GetKey ("space")) {
-				weaponDirection = transform.localScale.x;
+				weaponDirection = GetComponent<ChickenMovement>().facingDirection;
 				print (weaponDirection);
 				createWeapon();
 			}
@@ -44,7 +50,7 @@ public class ChickenAttack : MonoBehaviour {
 	
 	void createWeapon() {
 		weaponInstance = Instantiate(weaponTemplate, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
-        weaponInstance.transform.parent = transform;
+        //weaponInstance.transform.parent = transform;
         rotation = 0;
 		instanceSpeed = weaponSpeed;
 
