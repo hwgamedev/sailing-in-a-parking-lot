@@ -84,7 +84,6 @@ public class LifeManager : MonoBehaviour {
     {
         alive = false;
         AudioSource.PlayClipAtPoint(BWUAK, transform.position);
-        print("Chunk");
         GameObject chunkhead = Instantiate(chunks[0], transform.position, Quaternion.identity) as GameObject;
         chunkhead.rigidbody2D.AddForce(Vector3.right * Random.Range(-5, 5));
         chunkhead.rigidbody2D.AddForce(Vector3.up * Random.Range(300, 1000));
