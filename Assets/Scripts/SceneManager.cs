@@ -28,5 +28,10 @@ public class SceneManager : MonoBehaviour {
 		timer = timeToChange;
 	}
 
+	public void gameWon()
+	{
+		Application.LoadLevel("GameWon");
+	}
+
 
 }
