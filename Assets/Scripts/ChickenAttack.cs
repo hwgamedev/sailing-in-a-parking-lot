@@ -45,7 +45,6 @@ public class ChickenAttack : MonoBehaviour {
 		else {
 			if(swipeComponent.left || swipeComponent.right || Input.GetKey ("space")) {
 				weaponDirection = GetComponent<ChickenMovement>().facingDirection;
-				print (weaponDirection);
 				createWeapon();
 			}
 		}
