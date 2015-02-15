@@ -1684,4 +1684,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befb8aa0dcff99c49b97a90336c08b66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hm: {fileID: 0}
+  invincibilityTime: 3
