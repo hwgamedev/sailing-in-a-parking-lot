@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Chunks : MonoBehaviour {
-    float timer = 2.0f;
+    public float timer = 2.0f;
 	// Use this for initialization
 	void Start () {
         
