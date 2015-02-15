@@ -77,7 +77,7 @@ public class ChickenAttack : MonoBehaviour {
         }
         else
         {
-            return new Color(0.0f, 0.0f, 0.0f, 0.0f);
+            return spriteRenderer.color;
         }
     }
 }
