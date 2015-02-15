@@ -14,6 +14,7 @@ public class rotateScript : MonoBehaviour {
 
 		transform.rotation = Quaternion.identity;
 		transform.Rotate (0, 0, DeviceRotation.getZRoll());
+		print (DeviceRotation.getZRoll ());
 	}
 }
 
