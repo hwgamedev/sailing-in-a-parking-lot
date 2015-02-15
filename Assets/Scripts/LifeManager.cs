@@ -94,8 +94,13 @@ public class LifeManager : MonoBehaviour {
             chunk.rigidbody2D.AddForce(Vector3.right * Random.Range(-25, 25));
             chunk.rigidbody2D.AddForce(Vector3.up * Random.Range(50, 200));
         }
-
+        
         Destroy(gameObject);
+        GameObject[] waterguys = GameObject.FindGameObjectsWithTag("Enemy") as GameObject[];
+        foreach(GameObject waterguy in waterguys)
+        {
+            Destroy(waterguy);
+        }
         
     }
 
