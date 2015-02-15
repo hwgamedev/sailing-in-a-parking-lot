@@ -20,15 +20,19 @@ public class MagicCombiner : MonoBehaviour
     void Start()
     {
         tokens = Resources.LoadAll<GameObject>("Prefabs/Tokens");
+		Canvas c = GameObject.FindObjectOfType<Canvas> ();
         for (int i = 0; i < tokens.Length; i++ )
         {
-            _tokens[i] = Instantiate(tokens[i]) as GameObject;
-            _tokens[i].transform.parent = transform;
+            _tokens[i] = Instantiate(tokens[i], tokens[i].transform.position, Quaternion.identity) as GameObject;
+			_tokens[i].transform.parent = c.transform;
+			_tokens[i].transform.localPosition = tokens[i].transform.position;
+			_tokens[i].transform.localScale = tokens[i].transform.localScale;
         }
         sprites = Resources.LoadAll<Sprite>("Sprites/MagicComb/Combiner");
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer.sprite == null)
             spriteRenderer.sprite = sprites[0];
+
     }
 
     // Update is called once per frame
