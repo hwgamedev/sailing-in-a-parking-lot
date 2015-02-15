@@ -82,6 +82,10 @@ public class LifeManager : MonoBehaviour {
             
 
         }
+
+		if (col.gameObject.tag == "Cage") {
+			die ();
+		}
     }
 
     public void die()
