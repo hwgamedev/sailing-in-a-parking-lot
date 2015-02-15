@@ -5,6 +5,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	public GameObject healthBarTemplate;
 	public float maxHealth = 50;
+    public string chunkfolder;
 
 	private float totalHealth;
 	public float blinkyTime = 0.2f;
@@ -13,9 +14,11 @@ public class EnemyHealth : MonoBehaviour {
 	private Color originalColor;
 	private SpriteRenderer sr;
 	private GameObject healthBar;
+    private GameObject[] chunks = new GameObject[3];
 
 	// Use this for initialization
 	void Start () {
+        chunks = Resources.LoadAll<GameObject>("Prefabs/" + chunkfolder);
 		totalHealth = maxHealth;
 		blinkyElapsed = -1;
 		sr = GetComponent<SpriteRenderer> ();
@@ -56,17 +59,24 @@ public class EnemyHealth : MonoBehaviour {
         if (totalHealth < 0)
         {
             GetComponent<DropItem>().dropItem();
-            if (totalHealth <= 0)
-            {
+                explode();
                 Destroy(healthBar);
                 Destroy(gameObject);
-
-            }
         }
     }
 
     public float healthRemaining()
     {
         return totalHealth;
+    }
+
+    public void explode()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject chunk = Instantiate(chunks[i], transform.position, Quaternion.identity) as GameObject;
+            chunk.rigidbody2D.AddForce(Vector3.right * Random.Range(-25, 25));
+            chunk.rigidbody2D.AddForce(Vector3.up * Random.Range(50, 200));
+        }
     }
 }
