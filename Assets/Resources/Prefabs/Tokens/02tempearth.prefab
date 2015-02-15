@@ -38,7 +38,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 116468}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11451178
@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combiner: {fileID: 186372, guid: 80573abc65b16b843ae94a42d0246083, type: 2}
   draggingObject: 0
+  orginalPos: {x: 211, y: 177, z: 0}
 --- !u!212 &21216468
 SpriteRenderer:
   m_ObjectHideFlags: 1
