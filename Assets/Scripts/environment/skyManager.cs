@@ -22,7 +22,7 @@ public class skyManager : MonoBehaviour {
 		skylineQueue = new Queue<Transform>(numberOfSkyline);
 		for (int i = 0; i < numberOfSkyline; i++) {
 			Transform o = generate();
-			Vector2 pos = new Vector2(i*camMaxBound+Random.Range(5,10), Random.Range(2,4));
+			Vector2 pos = new Vector2(i*Random.Range(5,10), Random.Range(0,4));
 			o.localPosition = pos;
 			skylineQueue.Enqueue(o);
 		}
@@ -34,7 +34,7 @@ public class skyManager : MonoBehaviour {
 			Recycle();
 		} else {
 			Transform o = skylineQueue.Dequeue();
-			o.Translate(-5f * Time.deltaTime, 0f, 0f);
+			o.Translate(-3f * Time.deltaTime, 0f, 0f);
 			skylineQueue.Enqueue(o);
 		}
 	}
@@ -43,7 +43,7 @@ public class skyManager : MonoBehaviour {
 		Transform p = skylineQueue.Dequeue();
 		Destroy (p.gameObject);
 		Transform o = generate ();
-		Vector2 pos = new Vector2(camMaxBound+Random.Range(5,10), Random.Range(2,4));
+		Vector2 pos = new Vector2(camMaxBound+Random.Range(5,10), Random.Range(0,4));
 		o.localPosition = pos;
 		skylineQueue.Enqueue(o);
 	}
