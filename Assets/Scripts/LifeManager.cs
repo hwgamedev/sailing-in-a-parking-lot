@@ -12,6 +12,17 @@ public class LifeManager : MonoBehaviour {
 	private float blinkyIntervalMax = 0.1f;
 	private HeartManager hm;
 
+	public bool incHealth() {
+		if (health < 3) {
+			health++;
+			hm.updateHearts(health);
+			return true;
+		}
+		return false;
+	}
+	
+	public int getHealth() { return health; }
+
 	// Use this for initialization
 	void Start () {
 		hm = GameObject.FindGameObjectWithTag ("healthbar").GetComponent<HeartManager> ();
@@ -42,7 +53,6 @@ public class LifeManager : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col) {
 		if ((col.gameObject.tag == "Enemy" || col.gameObject.tag == "Projectile") && health > 0 && invincibilityRemaining == 0) {
-        if (col.gameObject.tag == "Enemy" && health > 0 && invincibilityRemaining == 0) {
 			health--;
 			hm.updateHearts(health);
 			invincibilityRemaining = invincibilityTime;
@@ -50,15 +60,4 @@ public class LifeManager : MonoBehaviour {
 			rigidbody2D.AddForce (new Vector2(0,5),ForceMode2D.Impulse);
 		}
 	}
-
-	public bool incHealth() {
-		if (health < 3) {
-			health++;
-			hm.updateHearts(health);
-			return true;
-		}
-		return false;
-	}
-
-	public int getHealth() { return health; }
 }
