@@ -11,13 +11,12 @@ GameObject:
   - 95: {fileID: 9518490}
   - 212: {fileID: 21218490}
   - 50: {fileID: 5018490}
-  - 68: {fileID: 6818490}
   - 114: {fileID: 11418490}
   - 114: {fileID: 11418492}
   - 114: {fileID: 11418494}
   - 114: {fileID: 11473500}
   - 114: {fileID: 11422482}
-  - 61: {fileID: 6160854}
+  - 61: {fileID: 6185066}
   m_Layer: 16
   m_Name: FireEnemy
   m_TagString: Enemy
@@ -52,19 +51,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6160854
+--- !u!61 &6185066
 BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118490}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1.85000002, y: 1.85000002}
-  m_Center: {x: 0, y: 0}
---- !u!68 &6818490
-EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -72,12 +60,8 @@ EdgeCollider2D:
   m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Points:
-  - {x: .882176936, y: .251025319}
-  - {x: .292406142, y: -1.0748179}
-  - {x: -1.01691747, y: -.452946842}
-  - {x: -.359491915, y: 1.07353544}
-  - {x: .930783391, y: .30680865}
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!95 &9518490
 Animator:
   serializedVersion: 3
@@ -107,7 +91,7 @@ MonoBehaviour:
   maxSpeed: 1
   facingRight: 1
   moveRadius: 10
-  startToRight: 1
+  startToRight: 0
   left: {x: 0, y: 0}
   right: {x: 0, y: 0}
 --- !u!114 &11418492
@@ -163,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
   maxHealth: 50
+  chunkfolder: PinkChunks
   blinkyTime: .200000003
 --- !u!212 &21218490
 SpriteRenderer:

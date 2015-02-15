@@ -5,6 +5,7 @@ public class GuardCheck : MonoBehaviour {
 
 	public float sightDistance = 5f;
 	public bool sawPlayer = false;
+	public float lastXPos;
 	//public Transform player;
 
 	void Start()
@@ -22,11 +23,21 @@ public class GuardCheck : MonoBehaviour {
 	{
 		//RaycastHit2D hit;
 		if (gameObject.GetComponent<Patrol>().facingRight){
-			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x+1,transform.position.y), Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x+1,transform.position.y - 0.5f ), Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+			if(!sawPlayer){
+				sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x+1,transform.position.y ), Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+				if(!sawPlayer)
+					sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x+1,transform.position.y + 0.5f ), Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+			}
 		}else
-			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x-1,transform.position.y), -Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x-1,transform.position.y - 0.5f ), -Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+			if(!sawPlayer){
+				sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x-1,transform.position.y ), -Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+				if(!sawPlayer)
+					sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x-1,transform.position.y + 0.5f ), -Vector2.right, sightDistance,LayerMask.GetMask("Player"));
+			}
 	}
-
+	
 	void DebugRays()
 	{
 		if (gameObject.GetComponent<Patrol>().facingRight){

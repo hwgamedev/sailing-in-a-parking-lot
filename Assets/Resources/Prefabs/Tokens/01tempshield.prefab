@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11492068}
   m_Layer: 5
   m_Name: 01tempshield
-  m_TagString: Untagged
+  m_TagString: Draggable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 2.0999999, z: 0}
+  m_LocalPosition: {x: 26.2109814, y: 38.7662239, z: 0}
   m_LocalScale: {x: .300000012, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38,8 +38,8 @@ BoxCollider2D:
   m_GameObject: {fileID: 192068}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
+  m_IsTrigger: 1
+  m_Size: {x: 5, y: 5}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11492068
 MonoBehaviour:
@@ -53,6 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combiner: {fileID: 186372, guid: 80573abc65b16b843ae94a42d0246083, type: 2}
+  draggingObject: 0
 --- !u!212 &21292068
 SpriteRenderer:
   m_ObjectHideFlags: 1

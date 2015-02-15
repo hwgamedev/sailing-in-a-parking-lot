@@ -21,7 +21,7 @@ public class WeaponHit : MonoBehaviour {
 			else
 				direction = -1;
 
-			float knockback = 500f;
+			float knockback = -250.0f;
 			//Extend damage here
             if (magic.attackOn)
             {

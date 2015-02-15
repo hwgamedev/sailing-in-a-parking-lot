@@ -12,6 +12,7 @@ GameObject:
   - 50: {fileID: 5091812}
   - 61: {fileID: 6191812}
   - 114: {fileID: 11491812}
+  - 114: {fileID: 11481222}
   m_Layer: 0
   m_Name: HeartPickup
   m_TagString: Untagged
@@ -57,6 +58,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .25, y: .209999993}
   m_Center: {x: 0, y: 0}
+--- !u!114 &11481222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9229201d0e6eaa5419bb9dfc7c30acdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 5
 --- !u!114 &11491812
 MonoBehaviour:
   m_ObjectHideFlags: 1

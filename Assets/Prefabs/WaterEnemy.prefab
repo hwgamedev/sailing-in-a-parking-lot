@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
   maxHealth: 50
+  chunkfolder: Blueguychunks
   blinkyTime: .200000003
 --- !u!114 &11473950
 MonoBehaviour:
@@ -117,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightDistance: 5
   sawPlayer: 0
+  lastXPos: 0
 --- !u!114 &11473952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,7 +133,7 @@ MonoBehaviour:
   player: {fileID: 0}
   vanishTime: .5
   waitTime: 5
-  vanishing: 0
+  vanishing: 1
   appearing: 0
   waiting: 0
   minDistanceToPlayer: 1
@@ -148,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
-  facingRight: 1
+  facingRight: 0
   moveRadius: 10
   startToRight: 1
   left: {x: 0, y: 0}
