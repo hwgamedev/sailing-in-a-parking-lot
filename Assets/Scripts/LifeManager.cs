@@ -22,7 +22,8 @@ public class LifeManager : MonoBehaviour {
 		if(invincibilityRemaining > 0) {
 			invincibilityRemaining -= Time.deltaTime;
 			Color c = sr.color;
-			sr.color.a = c.a == 255? 50 : 255;
+			c.a = c.a == 255? 50 : 255;
+			sr.color = c;
 		}
 		else
 			invincibilityRemaining = 0;
