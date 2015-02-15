@@ -3,6 +3,9 @@ using System.Collections;
 
 public class rotateScript : MonoBehaviour {
 
+	private float myXaccel = 0.0f;
+	private float smoothSpeed = 8f;
+	
 	// Use this for initialization
 	void Start () {
 		Input.gyro.enabled = true;
@@ -13,8 +16,13 @@ public class rotateScript : MonoBehaviour {
 
 
 		transform.rotation = Quaternion.identity;
-		transform.Rotate (0, 0, DeviceRotation.getZRoll());
-		print (DeviceRotation.getZRoll ());
+		//transform.Rotate (0, 0, DeviceRotation.getZRoll());
+		//print (Input.acceleration);
+		myXaccel = Mathf.Lerp(myXaccel, Input.acceleration.x, smoothSpeed * Time.deltaTime);
+		transform.Rotate (0, 0, myXaccel*90*-1);
+
+		//prevAcceleration = currAcceleration;
+		//print (Input.acceleration.x);
 	}
 }
 
