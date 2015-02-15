@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 406994}
   - 212: {fileID: 21206994}
-  - 114: {fileID: 11406994}
   - 61: {fileID: 6108232}
+  - 114: {fileID: 11406994}
   m_Layer: 5
   m_Name: 00tempattack
   m_TagString: Draggable
