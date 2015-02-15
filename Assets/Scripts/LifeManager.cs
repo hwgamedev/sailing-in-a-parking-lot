@@ -4,23 +4,35 @@ using System.Collections;
 public class LifeManager : MonoBehaviour {
 
 	public HeartManager hm;
+	public float invincibilityTime = 3;
 		
+	private float invincibilityRemaining;
 	private int health = 3;
+	private SpriteRenderer sr;
 
 	// Use this for initialization
 	void Start () {
 		hm = GameObject.FindGameObjectWithTag ("healthbar").GetComponent<HeartManager> ();
+		invincibilityRemaining = invincibilityTime;
+		sr = GetComponent<SpriteRenderer> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(invincibilityRemaining > 0) {
+			invincibilityRemaining -= Time.deltaTime;
+			Color c = sr.color;
+			sr.color.a = c.a == 255? 50 : 255;
+		}
+		else
+			invincibilityRemaining = 0;
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		if (col.gameObject.tag == "Enemy" && health > 0) {
+		if (col.gameObject.tag == "Enemy" && health > 0 && invincibilityRemaining == 0) {
 			health--;
 			hm.updateHearts(health);
+			invincibilityRemaining = invincibilityTime;
 		}
 	}
 
