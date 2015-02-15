@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
   maxHealth: 50
-  chunkfolder: 
+  chunkfolder: Blueguychunks
   blinkyTime: .200000003
 --- !u!114 &11473950
 MonoBehaviour:
