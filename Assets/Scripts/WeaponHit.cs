@@ -21,7 +21,7 @@ public class WeaponHit : MonoBehaviour {
 			else
 				direction = -1;
 
-			float knockback = -250.0f;
+			float knockback = 250.0f;
 			//Extend damage here
             if (magic.attackOn)
             {
@@ -29,7 +29,6 @@ public class WeaponHit : MonoBehaviour {
                 if (magic.fireOn)
                 {
                     col.gameObject.GetComponent<EnemyHealth>().dealDamage(health, knockback * direction);
-                    print(health);
                 }
                 else if (magic.windOn)
                 {
