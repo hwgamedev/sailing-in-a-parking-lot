@@ -22,9 +22,9 @@ public class GuardCheck : MonoBehaviour {
 	{
 		//RaycastHit2D hit;
 		if (gameObject.GetComponent<Patrol>().facingRight){
-			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x+1,transform.position.y), Vector2.right, sightDistance);
+			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x+1,transform.position.y), Vector2.right, sightDistance,LayerMask.GetMask("Player"));
 		}else
-			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x-1,transform.position.y), -Vector2.right, sightDistance);
+			sawPlayer = Physics2D.Raycast(new Vector2(transform.position.x-1,transform.position.y), -Vector2.right, sightDistance,LayerMask.GetMask("Player"));
 	}
 
 	void DebugRays()
