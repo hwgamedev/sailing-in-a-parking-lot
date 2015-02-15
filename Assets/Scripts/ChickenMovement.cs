@@ -5,6 +5,7 @@ public class ChickenMovement : MonoBehaviour {
 
 	public Vector2 moving = new Vector2();
 	public float facingDirection = 1;
+    private bool jumped = false;
 
 	// Use this for initialization
 	void Start () {
@@ -36,10 +37,20 @@ public class ChickenMovement : MonoBehaviour {
 		}
 		if(System.Math.Abs (Input.acceleration.x*90) > 15)
 			moving.x = System.Math.Sign (Input.acceleration.x);
-		if (Input.touchCount > 0) {
-			moving.y = 1;
-		}
+        if (Input.touchCount > 0)
+        {
+            if (!jumped)
+            {
+                moving.y = 1;
+                jumped = true;
+                
+            }
 
+        }
+        if(Input.touchCount == 0)
+        {
+            jumped = false;
+        }
 
 	}
 }

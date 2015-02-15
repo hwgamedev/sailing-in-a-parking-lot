@@ -15,9 +15,10 @@ GameObject:
   - 114: {fileID: 11409814}
   - 114: {fileID: 11409816}
   - 114: {fileID: 11440002}
+  - 114: {fileID: 11433744}
   m_Layer: 16
   m_Name: RockEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +46,7 @@ Rigidbody2D:
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -103,6 +104,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightDistance: 5
   sawPlayer: 0
+--- !u!114 &11433744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd31346a27decf448db40893fea2d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
+  maxHealth: 50
+  blinkyTime: .200000003
 --- !u!114 &11440002
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -5,17 +5,19 @@ public class RockProjectile : MonoBehaviour
 {
 	
 	public bool goRight;
-	private float originalXPos;
 	public float speed = 100f;
-	public float range = 15f;
 	private bool hitGround = false;
+	public bool seen = false;
 	void Start () {
-		originalXPos = transform.position.x;
 	}
 	
 	void Update () {
-		if (Mathf.Abs(transform.position.x - originalXPos) > range) 
+		if (renderer.isVisible) seen = true;
+		if (seen && !renderer.isVisible)
+		{
 			GameObject.Destroy (gameObject);
+		}
+
 		if (hitGround)
 			ForceApply();
 		
