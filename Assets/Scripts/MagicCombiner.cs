@@ -15,12 +15,13 @@ public class MagicCombiner : MonoBehaviour
     private GameObject[] tokens = new GameObject[5];
     private GameObject[] _tokens = new GameObject[5];
     private Sprite[] sprites;
+    Canvas c;
 
 
     void Start()
     {
         tokens = Resources.LoadAll<GameObject>("Prefabs/Tokens");
-		Canvas c = GameObject.FindObjectOfType<Canvas> ();
+		c = GameObject.FindObjectOfType<Canvas> ();
         for (int i = 0; i < tokens.Length; i++ )
         {
             _tokens[i] = Instantiate(tokens[i], tokens[i].transform.position, Quaternion.identity) as GameObject;
@@ -50,6 +51,7 @@ public class MagicCombiner : MonoBehaviour
             {
                 attackOn = true;
                 Destroy(_tokens[0]);
+                replace(0);
             }
         }
         if (!shieldOn)
@@ -58,6 +60,7 @@ public class MagicCombiner : MonoBehaviour
             {
                 shieldOn = true;
                 Destroy(_tokens[1]);
+                replace(1);
             }
         }
         if (!earthOn)
@@ -66,6 +69,7 @@ public class MagicCombiner : MonoBehaviour
             {
                 earthOn = true;
                 Destroy(_tokens[2]);
+                replace(2);
             }
         }
         if (!windOn)
@@ -74,6 +78,7 @@ public class MagicCombiner : MonoBehaviour
             {
                 windOn = true;
                 Destroy(_tokens[3]);
+                replace(3);
             }
         }
         if (!fireOn)
@@ -82,6 +87,7 @@ public class MagicCombiner : MonoBehaviour
             {
                 fireOn = true;
                 Destroy(_tokens[4]);
+                replace(4);
             }
         }
     }
@@ -163,5 +169,13 @@ public class MagicCombiner : MonoBehaviour
         {
             attackOn = false;
         }
+    }
+
+    private void replace(int i)
+    {
+        _tokens[i] = Instantiate(tokens[i], tokens[i].transform.position, Quaternion.identity) as GameObject;
+        _tokens[i].transform.parent = c.transform;
+        _tokens[i].transform.localPosition = tokens[i].transform.position;
+        _tokens[i].transform.localScale = tokens[i].transform.localScale;
     }
 }
