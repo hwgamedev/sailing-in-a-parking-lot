@@ -27,11 +27,9 @@ TagManager:
   User Layer 14: 
   User Layer 15: 
   User Layer 16: 
-  User Layer 16: Enemy
   User Layer 17: 
   User Layer 18: 
   User Layer 19: 
-  User Layer 19: Projectile
   User Layer 20: 
   User Layer 21: 
   User Layer 22: 
@@ -60,4 +58,8 @@ TagManager:
   - name: character
     userID: 3
     uniqueID: 3376925863
+    locked: 0
+  - name: groundFront
+    userID: 4
+    uniqueID: 4252020819
     locked: 0
