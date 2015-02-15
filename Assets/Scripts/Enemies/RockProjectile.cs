@@ -7,16 +7,16 @@ public class RockProjectile : MonoBehaviour
 	public bool goRight;
 	public float speed = 100f;
 	private bool hitGround = false;
-	private bool seen;
+	public bool seen = false;
 	void Start () {
 	}
 	
 	void Update () {
-		seen = false;
 		if (renderer.isVisible) seen = true;
 		if (seen && !renderer.isVisible)
 		{
-			GameObject.Destroy(gameObject);
+			Debug.Log("DELETE");
+			GameObject.Destroy (gameObject);
 		}
 
 		if (hitGround)
