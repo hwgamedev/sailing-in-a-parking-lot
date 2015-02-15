@@ -41,7 +41,7 @@ public class LifeManager : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		if (col.gameObject.tag == "Enemy" && health > 0 && invincibilityRemaining == 0) {
+        if (col.gameObject.tag == "Enemy" && health > 0 && invincibilityRemaining == 0) {
 			health--;
 			hm.updateHearts(health);
 			invincibilityRemaining = invincibilityTime;
