@@ -4,6 +4,7 @@ using System.Collections;
 public class ChickenMovement : MonoBehaviour {
 
 	public Vector2 moving = new Vector2();
+	public float facingDirection = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -17,10 +18,12 @@ public class ChickenMovement : MonoBehaviour {
 		if (Input.GetKey("right"))
 		{
 			moving.x = 1;
+			facingDirection = 1;
 		}
 		else if (Input.GetKey("left"))
 		{
 			moving.x = -1;
+			facingDirection = -1;
 		}
 		
 		if (Input.GetKey("up"))
