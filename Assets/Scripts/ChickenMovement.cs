@@ -35,8 +35,10 @@ public class ChickenMovement : MonoBehaviour {
 		{
 			moving.y = -1;
 		}
-		if(System.Math.Abs (Input.acceleration.x*90) > 15)
+		if(System.Math.Abs (Input.acceleration.x*90) > 15) {
 			moving.x = System.Math.Sign (Input.acceleration.x);
+			facingDirection = moving.x;
+		}
         if (Input.touchCount > 0)
         {
             if (!jumped)
