@@ -13,6 +13,17 @@ public class LifeManager : MonoBehaviour {
 	private HeartManager hm;
     private GameObject[] chunks = new GameObject[6];
 
+	public bool incHealth() {
+		if (health < 3) {
+			health++;
+			hm.updateHearts(health);
+			return true;
+		}
+		return false;
+	}
+	
+	public int getHealth() { return health; }
+
 	// Use this for initialization
 	void Start () {
         chunks = Resources.LoadAll<GameObject>("Prefabs/Explode");
@@ -84,4 +95,13 @@ public class LifeManager : MonoBehaviour {
         Destroy(gameObject);
         
     }
+	void OnCollisionEnter2D(Collision2D col) {
+		if ((col.gameObject.tag == "Enemy" || col.gameObject.tag == "Projectile") && health > 0 && invincibilityRemaining == 0) {
+			health--;
+			hm.updateHearts(health);
+			invincibilityRemaining = invincibilityTime;
+			float xDirection = System.Math.Sign (rigidbody2D.velocity.x);
+			rigidbody2D.AddForce (new Vector2(0,5),ForceMode2D.Impulse);
+		}
+	}
 }
