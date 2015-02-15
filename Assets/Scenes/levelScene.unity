@@ -842,6 +842,7 @@ MonoBehaviour:
   airSpeedMultiplier: .300000012
   standing: 0
   frontCollision: 0
+  dust: {fileID: 19801964, guid: e6e9306d1ce52b544b18938f69ae1d81, type: 2}
   toGroundL: {fileID: 1913014220}
   toGroundR: {fileID: 1662668870}
   toFront: {fileID: 1514458938}
@@ -3187,6 +3188,7 @@ GameObject:
   - 114: {fileID: 1801699318}
   - 114: {fileID: 1801699317}
   - 114: {fileID: 1801699324}
+  - 114: {fileID: 1801699325}
   m_Layer: 16
   m_Name: RockEnemy
   m_TagString: Enemy
@@ -3332,6 +3334,20 @@ MonoBehaviour:
   healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
   maxHealth: 50
   blinkyTime: .200000003
+--- !u!114 &1801699325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11473988, guid: f18ee33d0c00a78459a2dd36940a0306,
+    type: 2}
+  m_PrefabInternal: {fileID: 517044921}
+  m_GameObject: {fileID: 1801699315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b5750debff14549b1291f3fadf5d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTemplate: {fileID: 191812, guid: da022486f3ac26640a0b77aafa916a7d, type: 2}
+  probability: .5
 --- !u!1 &1813190152
 GameObject:
   m_ObjectHideFlags: 0

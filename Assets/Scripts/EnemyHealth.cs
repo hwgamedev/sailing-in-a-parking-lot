@@ -53,6 +53,7 @@ public class EnemyHealth : MonoBehaviour {
 		healthBar.GetComponentInChildren<EnemyHealthBar> ().updatePercentage (totalHealth / maxHealth * 1.0f);
 
 		if (totalHealth < 0) {
+			GetComponent<DropItem>().dropItem();
 			Destroy (healthBar);
 			Destroy (gameObject);
 
