@@ -89,9 +89,10 @@ GameObject:
   - 114: {fileID: 76310283}
   - 114: {fileID: 76310282}
   - 114: {fileID: 76310284}
+  - 114: {fileID: 76310285}
   m_Layer: 16
   m_Name: RockEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,7 +175,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 43af88c820adc7244bec3197b4544c10, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .996078432, g: .996078432, b: .996078432, a: 1}
 --- !u!114 &76310282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +220,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rockProjectile: {fileID: 134686, guid: d38d2ca354e473f46bbcfd7b9536e7be, type: 2}
   shootDelay: 2
+--- !u!114 &76310285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11433744, guid: f18ee33d0c00a78459a2dd36940a0306,
+    type: 2}
+  m_PrefabInternal: {fileID: 1602406863}
+  m_GameObject: {fileID: 76310276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd31346a27decf448db40893fea2d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
+  maxHealth: 50
+  blinkyTime: .200000003
 --- !u!1 &278762454
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +250,7 @@ GameObject:
   - 114: {fileID: 278762460}
   - 114: {fileID: 278762462}
   - 114: {fileID: 278762461}
+  - 114: {fileID: 278762463}
   m_Layer: 16
   m_Name: WaterEnemy
   m_TagString: Enemy
@@ -276,7 +293,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3376925863
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 86ec1d3dbf4d66349a6643988ab3303f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -355,7 +372,7 @@ MonoBehaviour:
   appearing: 0
   waiting: 0
   minDistanceToPlayer: 1
-  maxDistanceToPlayer: 5
+  maxDistanceToPlayer: 3
 --- !u!114 &278762462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +387,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightDistance: 5
   sawPlayer: 0
+--- !u!114 &278762463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11433806, guid: a4be4bb166e5ea24095b80737708fbca,
+    type: 2}
+  m_PrefabInternal: {fileID: 1647012710}
+  m_GameObject: {fileID: 278762454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd31346a27decf448db40893fea2d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
+  maxHealth: 50
+  blinkyTime: .200000003
 --- !u!1001 &411672026
 Prefab:
   m_ObjectHideFlags: 0
@@ -501,9 +533,10 @@ GameObject:
   - 114: {fileID: 737588589}
   - 114: {fileID: 737588590}
   - 114: {fileID: 737588591}
+  - 114: {fileID: 737588592}
   m_Layer: 16
   m_Name: FireEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -636,6 +669,21 @@ MonoBehaviour:
   fireball: {fileID: 137926, guid: ce38e719792709d45aa198146f048bd6, type: 2}
   projectileNo: 3
   shootDelay: 3
+--- !u!114 &737588592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11473500, guid: 62d95970f15fc4348a89ac6843f42d4a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1364463915}
+  m_GameObject: {fileID: 737588583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd31346a27decf448db40893fea2d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
+  maxHealth: 50
+  blinkyTime: .200000003
 --- !u!1 &783966169
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +859,7 @@ MonoBehaviour:
   airSpeedMultiplier: .300000012
   standing: 0
   frontCollision: 0
+  dust: {fileID: 19801964, guid: e6e9306d1ce52b544b18938f69ae1d81, type: 2}
   toGroundL: {fileID: 959213246}
   toGroundR: {fileID: 1830769424}
   toFront: {fileID: 881549008}
@@ -1200,6 +1249,18 @@ Prefab:
     - target: {fileID: 409816, guid: f18ee33d0c00a78459a2dd36940a0306, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 21209816, guid: f18ee33d0c00a78459a2dd36940a0306, type: 2}
+      propertyPath: m_Color.r
+      value: .996078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 21209816, guid: f18ee33d0c00a78459a2dd36940a0306, type: 2}
+      propertyPath: m_Color.g
+      value: .996078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 21209816, guid: f18ee33d0c00a78459a2dd36940a0306, type: 2}
+      propertyPath: m_Color.b
+      value: .996078432
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f18ee33d0c00a78459a2dd36940a0306, type: 2}

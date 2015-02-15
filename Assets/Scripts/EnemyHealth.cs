@@ -54,9 +54,15 @@ public class EnemyHealth : MonoBehaviour {
 
 		if (totalHealth < 0) {
 			GetComponent<DropItem>().dropItem();
+		if (totalHealth <= 0) {
 			Destroy (healthBar);
 			Destroy (gameObject);
 
 		}
 	}
+
+    public float healthRemaining()
+    {
+        return totalHealth;
+    }
 }
