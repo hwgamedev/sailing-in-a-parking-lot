@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ChickenMovement : MonoBehaviour {
 
+	private swipe swipeComponent;
+
 	public Vector2 moving = new Vector2();
 	public float facingDirection = 1;
 	public int noDragged = 0;
@@ -11,7 +13,7 @@ public class ChickenMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		swipeComponent = GetComponent<swipe> ();
 	}
 	
 	// Update is called once per frame
@@ -54,7 +56,7 @@ public class ChickenMovement : MonoBehaviour {
 			facingDirection = moving.x;
 		}
 
-        if (Input.touchCount > 0)
+        if (swipeComponent.up)
         {
             if (!jumped)
             {
