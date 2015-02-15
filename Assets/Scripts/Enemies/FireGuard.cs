@@ -14,6 +14,7 @@ public class FireGuard : MonoBehaviour {
 	void Start () {
 		guard = gameObject.GetComponent<GuardCheck>();
 		patrol = gameObject.GetComponent<Patrol>();
+		Physics2D.IgnoreLayerCollision(20,5);
 	}
 
 	void Update () {
@@ -30,6 +31,7 @@ public class FireGuard : MonoBehaviour {
 		{
 			Physics2D.IgnoreLayerCollision(19,19);
 			Physics2D.IgnoreLayerCollision(19,16);
+			Physics2D.IgnoreLayerCollision(19,5);
 			GameObject [] clone = new GameObject[projectileNo];
 
 			for (int i = 0; i< projectileNo; i++)

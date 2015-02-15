@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21216468}
   - 61: {fileID: 6116468}
   - 114: {fileID: 11451178}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 02tempearth
   m_TagString: Untagged
   m_Icon: {fileID: 0}

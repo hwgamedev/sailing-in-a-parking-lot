@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21279168}
   - 61: {fileID: 6179168}
   - 114: {fileID: 11479168}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 04tempfire
   m_TagString: Untagged
   m_Icon: {fileID: 0}

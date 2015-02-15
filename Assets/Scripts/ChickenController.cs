@@ -10,6 +10,8 @@ public class ChickenController : MonoBehaviour {
 	public bool standing;
 	public bool frontCollision;
 
+	public ParticleSystem dust;
+
 	//checker for ground
 	public Transform toGroundL;
 	public Transform toGroundR;
@@ -25,6 +27,7 @@ public class ChickenController : MonoBehaviour {
 		controller = GetComponent<ChickenMovement>();
 		animator = GetComponent<Animator>();
 
+		dust.renderer.sortingLayerName = "character";
 	}
 	
 	// Update is called once per frame
@@ -59,9 +62,12 @@ public class ChickenController : MonoBehaviour {
 				transform.localScale = new Vector3(forceX > 0 ? 1 : -1, 1, 1);
 			}
 			animator.SetInteger("animState", 1);
+
+			dust.enableEmission = standing;
 		}
 		else
 		{
+			dust.enableEmission = false;
 			animator.SetInteger("animState", 0);
 		}
 		
