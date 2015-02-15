@@ -12,6 +12,9 @@ public class LifeManager : MonoBehaviour {
 	private float blinkyIntervalMax = 0.1f;
 	private HeartManager hm;
     private GameObject[] chunks = new GameObject[6];
+    private bool alive = true;
+    public AudioClip BWUAK;
+    public AudioClip hit;
 
 	public bool incHealth() {
 		if (health < 3) {
