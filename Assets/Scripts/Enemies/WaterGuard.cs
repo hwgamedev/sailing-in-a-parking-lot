@@ -4,7 +4,7 @@ using System.Collections;
 public class WaterGuard : MonoBehaviour {
 
 	private GuardCheck guard;
-	public Transform player;
+	private Transform player;
 	public float vanishTime = 1f;
 	public float waitTime = 5f;
 	public bool vanishing = false;
@@ -22,11 +22,16 @@ public class WaterGuard : MonoBehaviour {
 		animator = GetComponent<Animator>();
 		guard = gameObject.GetComponent<GuardCheck>();
 		Physics2D.IgnoreLayerCollision(16,5);
+		player = GameObject.FindGameObjectsWithTag("Player")[0].transform;
 	}
 
 	void Update ()
 	{
-		Teleport ();
+		if (player == null){
+			player = GameObject.FindGameObjectsWithTag("Player")[0].transform;
+		}else{
+			Teleport ();
+		}
 		SetAnimatorParameters();
 	}
 
@@ -44,7 +49,7 @@ public class WaterGuard : MonoBehaviour {
 					posDelta = Random.Range (minDistanceToPlayer, maxDistanceToPlayer);
 				}else
 					posDelta = Random.Range (-maxDistanceToPlayer, -minDistanceToPlayer);
-				rigidbody2D.position = new Vector2(player.position.x + posDelta , player.position.y);
+				rigidbody2D.position = new Vector2(player.transform.position.x + posDelta , player.position.y);
 				appearing = true;
 				vanishTimer = vanishTime;
 			}

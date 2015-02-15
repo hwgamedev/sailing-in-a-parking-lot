@@ -130,10 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c846896f93cd48d4ba2e6f9e536d8ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   vanishTime: .5
   waitTime: 5
-  vanishing: 1
+  vanishing: 0
   appearing: 0
   waiting: 0
   minDistanceToPlayer: 1
