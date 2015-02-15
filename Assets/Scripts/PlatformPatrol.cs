@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Patrol : MonoBehaviour {
+public class PlatformPatrol : MonoBehaviour {
 	public float maxSpeed = 1f;
 	public bool facingRight = true;
 	public float moveRadius = 10f;
@@ -9,14 +9,14 @@ public class Patrol : MonoBehaviour {
 	public bool startToRight = true;
 	float move;
 	public bool flip = true;
-
+	
 	void Start () {
 		if (startToRight)
 			move = 1;
 		else
 			move = -1;
 	}
-
+	
 	void Update () {
 		if (distanceToOrigin > moveRadius)
 			move = -1;
@@ -31,7 +31,7 @@ public class Patrol : MonoBehaviour {
 			if (move > 0 && !facingRight)
 				Flip ();
 	}
-
+	
 	void Flip ()
 	{
 		if (flip) {
@@ -41,5 +41,5 @@ public class Patrol : MonoBehaviour {
 			transform.localScale = scale;
 		}
 	}
-
+	
 }
