@@ -13,6 +13,7 @@ public class RockGuard : MonoBehaviour {
 	void Start () {
 		guard = gameObject.GetComponent<GuardCheck>();
 		patrol = gameObject.GetComponent<Patrol>();
+		Physics2D.IgnoreLayerCollision(20,5);
 	}
 	
 	void Update () {
@@ -29,6 +30,7 @@ public class RockGuard : MonoBehaviour {
 		{
 			Physics2D.IgnoreLayerCollision(19,19);
 			Physics2D.IgnoreLayerCollision(19,16);
+			Physics2D.IgnoreLayerCollision(19,5);
 			GameObject  clone;
 
 			clone = Instantiate(rockProjectile, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation) as GameObject;

@@ -55,90 +55,90 @@ TextureImporter:
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 502
-        width: 235
-        height: 251
+        x: 116
+        y: 567
+        width: 69
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_1
       rect:
         serializedVersion: 2
-        x: 235
-        y: 502
-        width: 235
-        height: 251
+        x: 351
+        y: 558
+        width: 67
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_2
       rect:
         serializedVersion: 2
-        x: 470
-        y: 502
-        width: 235
-        height: 251
+        x: 579
+        y: 550
+        width: 82
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 251
-        width: 235
-        height: 251
+        x: 76
+        y: 263
+        width: 159
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_4
       rect:
         serializedVersion: 2
-        x: 235
-        y: 251
-        width: 235
-        height: 251
+        x: 298
+        y: 263
+        width: 163
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_5
       rect:
         serializedVersion: 2
-        x: 470
-        y: 251
-        width: 235
-        height: 251
+        x: 555
+        y: 259
+        width: 120
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 79
         y: 0
-        width: 235
-        height: 251
+        width: 130
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_7
       rect:
         serializedVersion: 2
-        x: 235
-        y: 0
-        width: 235
-        height: 251
+        x: 313
+        y: 8
+        width: 132
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: npc_squid_variant_squidBlue_x1_bamfIn_png_1354833371_8
       rect:
         serializedVersion: 2
-        x: 470
-        y: 0
-        width: 235
-        height: 251
+        x: 593
+        y: 67
+        width: 55
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
