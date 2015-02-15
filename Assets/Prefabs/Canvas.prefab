@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1528a9f2147e974b944ab2094837b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combiner: {fileID: 0}
+  combiner: {fileID: 100376}
   draggingObject: 0
 --- !u!114 &11400380
 MonoBehaviour:
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1528a9f2147e974b944ab2094837b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combiner: {fileID: 0}
+  combiner: {fileID: 100376}
   draggingObject: 0
 --- !u!114 &11400384
 MonoBehaviour:
