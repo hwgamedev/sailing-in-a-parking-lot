@@ -6,7 +6,7 @@ public class LifeManager : MonoBehaviour {
 	public float invincibilityTime = 3;
 		
 	private float invincibilityRemaining;
-	public int health = 3;
+	private int health = 3;
 	private SpriteRenderer sr;
 	private float blinkyInterval;
 	private float blinkyIntervalMax = 0.1f;
