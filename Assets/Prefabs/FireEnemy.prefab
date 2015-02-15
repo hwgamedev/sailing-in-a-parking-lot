@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11418494}
   - 114: {fileID: 11473500}
   - 114: {fileID: 11422482}
-  - 61: {fileID: 6185066}
+  - 61: {fileID: 6137026}
   m_Layer: 16
   m_Name: FireEnemy
   m_TagString: Enemy
@@ -31,7 +31,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.3686142, y: -11.3237352, z: 0}
+  m_LocalPosition: {x: 53.7000008, y: -11.3199997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,16 +51,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6185066
+--- !u!61 &6137026
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118490}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.60000002, y: 1.82000005}
   m_Center: {x: 0, y: 0}
 --- !u!95 &9518490
 Animator:
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
-  facingRight: 1
+  facingRight: 0
   moveRadius: 10
   startToRight: 0
   left: {x: 0, y: 0}
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightDistance: 5
   sawPlayer: 0
+  lastXPos: 0
 --- !u!114 &11418494
 MonoBehaviour:
   m_ObjectHideFlags: 1
