@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
   maxHealth: 50
+  chunkfolder: 
   blinkyTime: .200000003
 --- !u!114 &11473950
 MonoBehaviour:
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
-  facingRight: 1
+  facingRight: 0
   moveRadius: 10
   startToRight: 1
   left: {x: 0, y: 0}
