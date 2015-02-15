@@ -21,7 +21,7 @@ public class WaterGuard : MonoBehaviour {
 	{
 		animator = GetComponent<Animator>();
 		guard = gameObject.GetComponent<GuardCheck>();
-		Physics2D.IgnoreLayerCollision(20,5);
+		Physics2D.IgnoreLayerCollision(16,5);
 	}
 
 	void Update ()
