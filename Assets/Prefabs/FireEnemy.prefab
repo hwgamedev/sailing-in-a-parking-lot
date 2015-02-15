@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11418492}
   - 114: {fileID: 11418494}
   - 114: {fileID: 11473500}
+  - 114: {fileID: 11422482}
   m_Layer: 16
   m_Name: FireEnemy
   m_TagString: Enemy
@@ -122,6 +123,19 @@ MonoBehaviour:
   fireball: {fileID: 137926, guid: ce38e719792709d45aa198146f048bd6, type: 2}
   projectileNo: 3
   shootDelay: 3
+--- !u!114 &11422482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b5750debff14549b1291f3fadf5d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTemplate: {fileID: 191812, guid: da022486f3ac26640a0b77aafa916a7d, type: 2}
+  probability: .5
 --- !u!114 &11473500
 MonoBehaviour:
   m_ObjectHideFlags: 1

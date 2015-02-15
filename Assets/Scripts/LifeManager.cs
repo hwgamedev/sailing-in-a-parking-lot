@@ -41,6 +41,7 @@ public class LifeManager : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
+		if ((col.gameObject.tag == "Enemy" || col.gameObject.tag == "Projectile") && health > 0 && invincibilityRemaining == 0) {
         if (col.gameObject.tag == "Enemy" && health > 0 && invincibilityRemaining == 0) {
 			health--;
 			hm.updateHearts(health);
@@ -48,6 +49,15 @@ public class LifeManager : MonoBehaviour {
 			float xDirection = System.Math.Sign (rigidbody2D.velocity.x);
 			rigidbody2D.AddForce (new Vector2(0,5),ForceMode2D.Impulse);
 		}
+	}
+
+	public bool incHealth() {
+		if (health < 3) {
+			health++;
+			hm.updateHearts(health);
+			return true;
+		}
+		return false;
 	}
 
 	public int getHealth() { return health; }
