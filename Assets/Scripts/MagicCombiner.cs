@@ -24,7 +24,7 @@ public class MagicCombiner : MonoBehaviour
         for (int i = 0; i < tokens.Length; i++ )
         {
             _tokens[i] = Instantiate(tokens[i], tokens[i].transform.position, Quaternion.identity) as GameObject;
-			_tokens[i].transform.parent = c.transform;
+			_tokens[i].transform.parent = transform;
 			_tokens[i].transform.localPosition = tokens[i].transform.position;
 			_tokens[i].transform.localScale = tokens[i].transform.localScale;
         }
