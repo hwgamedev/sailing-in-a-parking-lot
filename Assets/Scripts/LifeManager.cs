@@ -94,7 +94,8 @@ public class LifeManager : MonoBehaviour {
             chunk.rigidbody2D.AddForce(Vector3.right * Random.Range(-25, 25));
             chunk.rigidbody2D.AddForce(Vector3.up * Random.Range(50, 200));
         }
-
+		SceneManager sm = GameObject.FindGameObjectsWithTag("SceneManager")[0].GetComponent<SceneManager>();
+		sm.ChangeScene();
         Destroy(gameObject);
         
     }

@@ -1,7 +1,35 @@
 fileFormatVersion: 2
 guid: 3d91c1916f818e3479fc2cba8a19eeed
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_0
+    21300002: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_1
+    21300004: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_2
+    21300006: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_3
+    21300008: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_4
+    21300010: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_5
+    21300012: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_6
+    21300014: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_7
+    21300016: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_8
+    21300018: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_9
+    21300020: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_10
+    21300022: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_11
+    21300024: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_12
+    21300026: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_13
+    21300028: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_14
+    21300030: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_15
+    21300032: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_16
+    21300034: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_17
+    21300036: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_18
+    21300038: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_19
+    21300040: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_20
+    21300042: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_21
+    21300044: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_22
+    21300046: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_23
+    21300048: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_24
+    21300050: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_25
+    21300052: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_26
+    21300054: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +53,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +70,286 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 197
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 198
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 198
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 200
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 200
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_5
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 201
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_6
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 201
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_7
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 201
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_8
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 196
+        width: 72
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_9
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 192
+        width: 71
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 87
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 92
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_12
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 92
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 92
+        width: 71
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 91
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_15
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 90
+        width: 71
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_16
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 89
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_17
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 89
+        width: 71
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_18
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 89
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 34
+        width: 69
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 30
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_21
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 30
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_22
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 31
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 31
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 67
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_25
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 33
+        width: 68
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_26
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 33
+        width: 68
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: street_spirit_groddle_base_base_L0dirt_bottom_none_eyes_eyes_L0eyes3_skull_skull_L0dirt_top_none_x1_open_png_1354834608_27
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 33
+        width: 69
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
