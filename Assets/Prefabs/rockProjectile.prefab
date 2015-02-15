@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 434686}
   - 212: {fileID: 21234686}
   - 50: {fileID: 5034686}
-  - 68: {fileID: 6834686}
   - 114: {fileID: 11434686}
+  - 61: {fileID: 6117528}
   m_Layer: 19
   m_Name: rockProjectile
   m_TagString: Untagged
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 32.6225967, y: 1.48074675, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,8 +46,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!68 &6834686
-EdgeCollider2D:
+--- !u!61 &6117528
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -55,13 +55,8 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Points:
-  - {x: .211785927, y: -.184794009}
-  - {x: -.203731135, y: -.202931315}
-  - {x: -.206978038, y: .055616796}
-  - {x: .0270178877, y: .207070515}
-  - {x: .215448737, y: .118058033}
-  - {x: .216600269, y: -.17359437}
+  m_Size: {x: .5, y: .5}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11434686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,7 +89,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3376925863
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b598baeaae7e624448ea07151508e86e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

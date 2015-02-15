@@ -7,7 +7,7 @@ public class RockProjectile : MonoBehaviour
 	public bool goRight;
 	private float originalXPos;
 	public float speed = 100f;
-	public float range = 20f;
+	public float range = 15f;
 	private bool hitGround = false;
 	void Start () {
 		originalXPos = transform.position.x;
