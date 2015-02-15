@@ -44,22 +44,26 @@ public class EnemyHealth : MonoBehaviour {
 
 	}
 
-	public void dealDamage(float amount, float knockback) {
-		totalHealth -= amount;
-		blinkyElapsed = 0;
+    public void dealDamage(float amount, float knockback)
+    {
+        totalHealth -= amount;
+        blinkyElapsed = 0;
 
-		//bounceback
-		rigidbody2D.AddForce (new Vector2 (knockback, 5f), ForceMode2D.Impulse);
-		healthBar.GetComponentInChildren<EnemyHealthBar> ().updatePercentage (totalHealth / maxHealth * 1.0f);
+        //bounceback
+        rigidbody2D.AddForce(new Vector2(knockback, 5f), ForceMode2D.Impulse);
+        healthBar.GetComponentInChildren<EnemyHealthBar>().updatePercentage(totalHealth / maxHealth * 1.0f);
 
-		if (totalHealth < 0) {
-			GetComponent<DropItem>().dropItem();
-		if (totalHealth <= 0) {
-			Destroy (healthBar);
-			Destroy (gameObject);
+        if (totalHealth < 0)
+        {
+            GetComponent<DropItem>().dropItem();
+            if (totalHealth <= 0)
+            {
+                Destroy(healthBar);
+                Destroy(gameObject);
 
-		}
-	}
+            }
+        }
+    }
 
     public float healthRemaining()
     {
