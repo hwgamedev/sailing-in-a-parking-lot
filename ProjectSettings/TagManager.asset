@@ -45,3 +45,11 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: sky
+    userID: 1
+    uniqueID: 2627373371
+    locked: 0
+  - name: ground
+    userID: 2
+    uniqueID: 681704017
+    locked: 0
