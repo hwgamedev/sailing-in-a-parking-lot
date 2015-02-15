@@ -54,10 +54,7 @@ public class EnemyHealth : MonoBehaviour {
         if (totalHealth <= 0)
         {
 
-            explode();
-            GetComponent<DropItem>().dropItem();
-            Destroy(healthBar);
-            Destroy(gameObject);
+			die();
 
         }
         //bounceback
@@ -66,6 +63,21 @@ public class EnemyHealth : MonoBehaviour {
 
 
     }
+
+	void OnCollisionEnter2D(Collision2D col)
+	{
+	
+		if (col.gameObject.tag == "Cage") {
+			die ();
+		}
+	}
+
+	private void die() {
+		explode();
+		GetComponent<DropItem>().dropItem();
+		Destroy(healthBar);
+		Destroy(gameObject);
+	}
 
     public float healthRemaining()
     {
