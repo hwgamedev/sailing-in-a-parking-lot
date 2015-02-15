@@ -257,7 +257,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
 --- !u!1 &401128191
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +382,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 3376925863
+  m_SortingLayerID: 4252020819
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4662030e67569c740aace7d4061835d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -393,11 +393,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 545848682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.57000017, y: 4.51000023, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -250.611801, y: 133.629639, z: -4049.38281}
+  m_LocalScale: {x: 89.9862823, y: 89.9862823, z: 44.9931412}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1871193307}
+  m_RootOrder: 3
 --- !u!1 &568715054
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!1 &1296414742
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +649,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
 --- !u!1 &1350877741
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,11 +923,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1844181317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.81999993, y: 1, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -171.873795, y: -24.2962952, z: -4049.38281}
+  m_LocalScale: {x: 89.9862823, y: 89.9862823, z: 44.9931412}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1871193307}
+  m_RootOrder: 4
 --- !u!1 &1871193306
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +960,8 @@ RectTransform:
   - {fileID: 140815589}
   - {fileID: 209637616}
   - {fileID: 1617632993}
+  - {fileID: 545848684}
+  - {fileID: 1844181319}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -1053,7 +1055,7 @@ Transform:
   - {fileID: 1449907966}
   - {fileID: 1739887648}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!1 &1929940655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,4 +1185,4 @@ Transform:
   - {fileID: 1929940656}
   - {fileID: 1350877743}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
