@@ -4,6 +4,7 @@ using System.Collections;
 public class ChickenMovement : MonoBehaviour {
 
 	public Vector2 moving = new Vector2();
+	public float facingDirection = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -17,10 +18,12 @@ public class ChickenMovement : MonoBehaviour {
 		if (Input.GetKey("right"))
 		{
 			moving.x = 1;
+			facingDirection = 1;
 		}
 		else if (Input.GetKey("left"))
 		{
 			moving.x = -1;
+			facingDirection = -1;
 		}
 		
 		if (Input.GetKey("up"))
@@ -31,18 +34,11 @@ public class ChickenMovement : MonoBehaviour {
 		{
 			moving.y = -1;
 		}
-
-		//Debug.Log (DeviceRotation.getZRoll ());
-		//if(!(DeviceRotation.getZRoll () == 0))
-		//moving.x = (DeviceRotation.getZRoll () - 180)/180;
-		//if (!(Input.acceleration.x == 0))
 		if(System.Math.Abs (Input.acceleration.x*90) > 15)
 			moving.x = System.Math.Sign (Input.acceleration.x);
 		if (Input.touchCount > 0) {
 			moving.y = 1;
 		}
-
-		DeviceRotation.Get ();
 
 
 	}

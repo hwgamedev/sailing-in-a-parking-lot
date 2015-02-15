@@ -1463,7 +1463,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414898, guid: 45ebc6cdf9e086f44aad1246211fe589, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45ebc6cdf9e086f44aad1246211fe589, type: 2}
@@ -1549,6 +1549,8 @@ GameObject:
   - 114: {fileID: 2127326028}
   - 114: {fileID: 2127326029}
   - 114: {fileID: 2127326030}
+  - 114: {fileID: 2127326031}
+  - 114: {fileID: 2127326032}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Player
@@ -1685,3 +1687,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invincibilityTime: 3
+--- !u!114 &2127326031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127326022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecbc7f474b4ac746a3c8fd17673fc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponTemplate: {fileID: 109688, guid: ecd581a5b8f78724ea1c3e7ee169f408, type: 2}
+  weaponSpeed: 25
+--- !u!114 &2127326032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127326022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf45bd46fc135f4ab79fdef362058a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  up: 0
+  down: 0
+  left: 0
+  right: 0
