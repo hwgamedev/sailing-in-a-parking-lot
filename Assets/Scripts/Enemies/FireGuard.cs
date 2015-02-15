@@ -39,7 +39,6 @@ public class FireGuard : MonoBehaviour {
 				else
 					clone[i] = Instantiate(fireball, new  Vector3(transform.position.x - 1, transform.position.y, 0), transform.rotation) as GameObject;
 
-				clone[i].transform.parent = transform;
 				clone[i].GetComponent<Projectile>().goRight = patrol.facingRight;
 			}
 			timeToShoot = shootDelay;
