@@ -3,7 +3,6 @@ using System.Collections;
 
 public class LifeManager : MonoBehaviour {
 
-	public HeartManager hm;
 	public float invincibilityTime = 3;
 		
 	private float invincibilityRemaining;
@@ -11,6 +10,7 @@ public class LifeManager : MonoBehaviour {
 	private SpriteRenderer sr;
 	private float blinkyInterval;
 	private float blinkyIntervalMax = 0.1f;
+	private HeartManager hm;
 
 	// Use this for initialization
 	void Start () {
