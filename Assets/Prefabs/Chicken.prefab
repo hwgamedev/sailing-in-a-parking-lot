@@ -203,6 +203,7 @@ MonoBehaviour:
   airSpeedMultiplier: .300000012
   standing: 0
   frontCollision: 0
+  dust: {fileID: 19801964, guid: e6e9306d1ce52b544b18938f69ae1d81, type: 2}
   toGroundL: {fileID: 400976}
   toGroundR: {fileID: 400974}
   toFront: {fileID: 400972}
