@@ -133,7 +133,7 @@ MonoBehaviour:
   player: {fileID: 0}
   vanishTime: .5
   waitTime: 5
-  vanishing: 0
+  vanishing: 1
   appearing: 0
   waiting: 0
   minDistanceToPlayer: 1
