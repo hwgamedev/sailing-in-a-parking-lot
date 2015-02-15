@@ -8,6 +8,7 @@ public class Patrol : MonoBehaviour {
 	float distanceToOrigin =0;
 	public bool startToRight = true;
 	float move;
+	public bool flip = true;
 
 	void Start () {
 		if (startToRight)
@@ -33,10 +34,12 @@ public class Patrol : MonoBehaviour {
 
 	void Flip ()
 	{
-		facingRight = !facingRight;
-		Vector3 scale = transform.localScale;
-		scale.x *= -1;
-		transform.localScale = scale;
+		if (flip) {
+			facingRight = !facingRight;
+			Vector3 scale = transform.localScale;
+			scale.x *= -1;
+			transform.localScale = scale;
+		}
 	}
 
 }

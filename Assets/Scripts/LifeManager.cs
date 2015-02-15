@@ -11,6 +11,7 @@ public class LifeManager : MonoBehaviour {
 	private float blinkyInterval;
 	private float blinkyIntervalMax = 0.1f;
 	private HeartManager hm;
+    private GameObject[] chunks = new GameObject[6];
 
 	public bool incHealth() {
 		if (health < 3) {
@@ -25,6 +26,7 @@ public class LifeManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        chunks = Resources.LoadAll<GameObject>("Prefabs/Explode");
 		hm = GameObject.FindGameObjectWithTag ("healthbar").GetComponent<HeartManager> ();
 		invincibilityRemaining = invincibilityTime;
 		sr = GetComponent<SpriteRenderer> ();
@@ -33,6 +35,10 @@ public class LifeManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (health ==0)
+        {
+            die();
+        }
 		if(invincibilityRemaining > 0) {
 			invincibilityRemaining -= Time.deltaTime;
 			Color c = sr.color;
@@ -51,6 +57,44 @@ public class LifeManager : MonoBehaviour {
 		}
 	}
 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if ((col.gameObject.tag == "Enemy" || col.gameObject.tag == "Projectile") && health > 0 && invincibilityRemaining == 0)
+        {
+            if (col.gameObject.tag == "Enemy" && health > 0 && invincibilityRemaining == 0)
+            {
+                health--;
+                hm.updateHearts(health);
+                invincibilityRemaining = invincibilityTime;
+                float xDirection = System.Math.Sign(rigidbody2D.velocity.x);
+                rigidbody2D.AddForce(new Vector2(0, 5), ForceMode2D.Impulse);
+            }
+        }
+    }
+
+	public bool incHealth() {
+		if (health < 3) {
+			health++;
+			hm.updateHearts(health);
+			return true;
+		}
+		return false;
+	}
+
+	public int getHealth() { return health; }
+
+    public void die()
+    {
+        for (int i = 0; i < chunks.Length; i++)
+        {
+            print("Chunk");
+            GameObject chunk = Instantiate(chunks[i], transform.position, Quaternion.identity) as GameObject;
+            chunks[i].rigidbody2D.AddForce(Vector3.right * Random.Range(-25, 25));
+            chunks[i].rigidbody2D.AddForce(Vector3.up * Random.Range(50, 200));
+        }
+        Destroy(gameObject);
+        
+    }
 	void OnCollisionEnter2D(Collision2D col) {
 		if ((col.gameObject.tag == "Enemy" || col.gameObject.tag == "Projectile") && health > 0 && invincibilityRemaining == 0) {
 			health--;
