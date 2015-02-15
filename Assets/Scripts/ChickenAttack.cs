@@ -44,7 +44,8 @@ public class ChickenAttack : MonoBehaviour {
 	
 	void createWeapon() {
 		weaponInstance = Instantiate(weaponTemplate, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity) as GameObject;
-		rotation = 0;
+        weaponInstance.transform.parent = transform;
+        rotation = 0;
 		instanceSpeed = weaponSpeed;
 
 	}
