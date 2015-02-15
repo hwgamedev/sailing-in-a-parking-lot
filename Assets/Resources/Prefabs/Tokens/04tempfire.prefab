@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 479168}
   - 212: {fileID: 21279168}
-  - 61: {fileID: 6179168}
   - 114: {fileID: 11479168}
+  - 61: {fileID: 6119660}
   m_Layer: 5
   m_Name: 04tempfire
   m_TagString: Draggable
@@ -30,7 +30,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6179168
+--- !u!61 &6119660
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -38,8 +38,8 @@ BoxCollider2D:
   m_GameObject: {fileID: 179168}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1.86000001, y: 1.75}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11479168
 MonoBehaviour:

@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 406518}
   - 212: {fileID: 21206518}
-  - 61: {fileID: 6106518}
   - 114: {fileID: 11406518}
+  - 61: {fileID: 6119660}
   m_Layer: 5
   m_Name: 03tempwind
   m_TagString: Draggable
@@ -30,7 +30,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6106518
+--- !u!61 &6119660
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -38,8 +38,8 @@ BoxCollider2D:
   m_GameObject: {fileID: 106518}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1.73000002, y: 1.69000006}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11406518
 MonoBehaviour:
