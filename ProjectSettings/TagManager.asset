@@ -5,6 +5,8 @@ TagManager:
   tags:
   - Dropped
   - Draggable
+  - Enemy
+  - healthbar
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
