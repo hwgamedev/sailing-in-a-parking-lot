@@ -13,8 +13,9 @@ GameObject:
   - 124: {fileID: 12458672}
   - 81: {fileID: 8158672}
   - 114: {fileID: 11437102}
+  - 114: {fileID: 11404944}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Rotating Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,6 +79,18 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158672}
   m_Enabled: 1
+--- !u!114 &11404944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82765b067a3adc04c9e2ae9911bae7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!114 &11437102
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -5,6 +5,8 @@ TagManager:
   tags:
   - Combiner
   - Draggable
+  - Enemy
+  - healthbar
   - 
   - Dropped
   - 
@@ -25,9 +27,11 @@ TagManager:
   User Layer 14: 
   User Layer 15: 
   User Layer 16: 
+  User Layer 16: Enemy
   User Layer 17: 
   User Layer 18: 
   User Layer 19: 
+  User Layer 19: Projectile
   User Layer 20: 
   User Layer 21: 
   User Layer 22: 
@@ -44,4 +48,16 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: sky
+    userID: 1
+    uniqueID: 2627373371
+    locked: 0
+  - name: ground
+    userID: 2
+    uniqueID: 681704017
+    locked: 0
+  - name: character
+    userID: 3
+    uniqueID: 3376925863
     locked: 0
