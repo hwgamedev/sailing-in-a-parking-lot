@@ -11,6 +11,9 @@ public class swipe : MonoBehaviour {
 	void Update () {
 		up = down = left = right = false;
 		//Debug.Log ("a");
+		if (GetComponent<ChickenMovement> ().noDragged != 0)
+			return;
+
 		if (Input.touchCount == 0) 
 			return;
 		

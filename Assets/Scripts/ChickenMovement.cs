@@ -5,6 +5,8 @@ public class ChickenMovement : MonoBehaviour {
 
 	public Vector2 moving = new Vector2();
 	public float facingDirection = 1;
+	public int noDragged = 0;
+
     private bool jumped = false;
 
 	// Use this for initialization
@@ -15,6 +17,18 @@ public class ChickenMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		moving.x = moving.y = 0;
+
+		//check if any tokens are being dragged about at the moment
+		noDragged = 0;
+		GameObject[] draggables = GameObject.FindGameObjectsWithTag ("Draggable");
+		for(int i = 0; i < draggables.Length; i++) {
+			if(draggables[i].GetComponent<Drag>().draggingObject)
+				noDragged++;
+		}
+		if (noDragged != 0) {
+			return;
+
+		}
 
 		if (Input.GetKey("right"))
 		{
@@ -39,6 +53,7 @@ public class ChickenMovement : MonoBehaviour {
 			moving.x = System.Math.Sign (Input.acceleration.x);
 			facingDirection = moving.x;
 		}
+
         if (Input.touchCount > 0)
         {
             if (!jumped)
