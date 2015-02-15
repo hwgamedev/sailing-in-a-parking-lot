@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
  using System.Collections;
  
- public class Drag : MonoBehaviour {
+public class Drag : MonoBehaviour {
+	public GameObject combiner;
 
      private Vector3 screenPoint;
      private Vector3 offset;
-     public GameObject combiner;
 
      void OnMouseDown()
      {
@@ -16,7 +16,6 @@
 
      void OnMouseDrag()
      {
-
              Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
              Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
              transform.position = curPosition;

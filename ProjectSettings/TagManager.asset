@@ -7,7 +7,7 @@ TagManager:
   - Draggable
   - Enemy
   - healthbar
-  - 
+  - Projectile
   - Dropped
   - 
   Builtin Layer 0: Default

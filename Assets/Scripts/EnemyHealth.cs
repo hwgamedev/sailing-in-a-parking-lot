@@ -13,6 +13,31 @@ public class EnemyHealth : MonoBehaviour {
 	private Color originalColor;
 	private SpriteRenderer sr;
 	private GameObject healthBar;
+	
+
+	public void dealDamage(float amount, float knockback) {
+		totalHealth -= amount;
+		blinkyElapsed = 0;
+
+		//bounceback
+		rigidbody2D.AddForce (new Vector2 (knockback, 5f), ForceMode2D.Impulse);
+		healthBar.GetComponentInChildren<EnemyHealthBar> ().updatePercentage (totalHealth / maxHealth * 1.0f);
+
+		if (totalHealth < 0) {
+			GetComponent<DropItem>().dropItem();
+		}
+		if (totalHealth <= 0) {
+			Destroy (healthBar);
+			Destroy (gameObject);
+
+		}
+	}
+
+    public float healthRemaining()
+    {
+        return totalHealth;
+    }
+
 
 	// Use this for initialization
 	void Start () {
@@ -42,20 +67,5 @@ public class EnemyHealth : MonoBehaviour {
 		healthBar.transform.position = htransform;
 
 
-	}
-
-	public void dealDamage(float amount, float knockback) {
-		totalHealth -= amount;
-		blinkyElapsed = 0;
-
-		//bounceback
-		rigidbody2D.AddForce (new Vector2 (knockback, 5f), ForceMode2D.Impulse);
-		healthBar.GetComponentInChildren<EnemyHealthBar> ().updatePercentage (totalHealth / maxHealth * 1.0f);
-
-		if (totalHealth < 0) {
-			Destroy (healthBar);
-			Destroy (gameObject);
-
-		}
 	}
 }

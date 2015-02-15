@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11473950}
   - 114: {fileID: 11473952}
   - 114: {fileID: 11433806}
+  - 114: {fileID: 11429802}
   m_Layer: 16
   m_Name: WaterEnemy
   m_TagString: Enemy
@@ -76,6 +77,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11429802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b5750debff14549b1291f3fadf5d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTemplate: {fileID: 191812, guid: da022486f3ac26640a0b77aafa916a7d, type: 2}
+  probability: .5
 --- !u!114 &11433806
 MonoBehaviour:
   m_ObjectHideFlags: 1

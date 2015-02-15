@@ -14,7 +14,7 @@ GameObject:
   - 61: {fileID: 6117528}
   m_Layer: 19
   m_Name: rockProjectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11409816}
   - 114: {fileID: 11440002}
   - 114: {fileID: 11433744}
+  - 114: {fileID: 11473988}
   m_Layer: 16
   m_Name: RockEnemy
   m_TagString: Enemy
@@ -131,6 +132,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rockProjectile: {fileID: 134686, guid: d38d2ca354e473f46bbcfd7b9536e7be, type: 2}
   shootDelay: 2
+--- !u!114 &11473988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b5750debff14549b1291f3fadf5d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTemplate: {fileID: 191812, guid: da022486f3ac26640a0b77aafa916a7d, type: 2}
+  probability: .5
 --- !u!212 &21209816
 SpriteRenderer:
   m_ObjectHideFlags: 1
