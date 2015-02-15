@@ -119,6 +119,6 @@ public class ChickenController : MonoBehaviour {
 		}
 
 		if (noCollisions)
-						frontCollision = false;
+			frontCollision = false;
 	}
 }

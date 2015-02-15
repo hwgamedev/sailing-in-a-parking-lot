@@ -32,6 +32,7 @@ public class ChickenMovement : MonoBehaviour {
 			moving.y = -1;
 		}
 
+		//Debug.Log (DeviceRotation.getZRoll ());
 		if(!(DeviceRotation.getZRoll () == 0))
 		moving.x = (DeviceRotation.getZRoll () - 180)/180;
 		if (Input.touchCount > 0) {
