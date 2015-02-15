@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sightDistance: 5
   sawPlayer: 0
+  lastXPos: 0
 --- !u!114 &11433744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarTemplate: {fileID: 185964, guid: 5fe720e723950d54db29d9d030b54a7f, type: 2}
-  maxHealth: 50
+  maxHealth: 40
   chunkfolder: Rockchunks
   blinkyTime: .200000003
 --- !u!114 &11440002
