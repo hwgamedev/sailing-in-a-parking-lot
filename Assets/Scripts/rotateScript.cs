@@ -8,7 +8,6 @@ public class rotateScript : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		Input.gyro.enabled = true;
 	}
 	
 	// Update is called once per frame
@@ -16,55 +15,8 @@ public class rotateScript : MonoBehaviour {
 
 
 		transform.rotation = Quaternion.identity;
-		//transform.Rotate (0, 0, DeviceRotation.getZRoll());
-		//print (Input.acceleration);
 		myXaccel = Mathf.Lerp(myXaccel, Input.acceleration.x, smoothSpeed * Time.deltaTime);
 		transform.Rotate (0, 0, myXaccel*90*-1);
-
-		//prevAcceleration = currAcceleration;
-		//print (Input.acceleration.x);
 	}
 }
 
-public static class DeviceRotation {
-	private static bool gyroInitialized = false;
-	
-	public static bool HasGyroscope {
-		get {
-			return SystemInfo.supportsGyroscope;
-		}
-	}
-	
-	public static Quaternion Get() {
-		if (!gyroInitialized) {
-			InitGyro();
-		}
-		
-		return HasGyroscope
-			? ReadGyroscopeRotation()
-				: Quaternion.identity;
-	}
-	
-	private static void InitGyro() {
-		if (HasGyroscope) {
-			Input.gyro.enabled = true;                // enable the gyroscope
-			Input.gyro.updateInterval = 0.0167f;    // set the update interval to it's highest value (60 Hz)
-		}
-		gyroInitialized = true;
-	}
-	
-	private static Quaternion ReadGyroscopeRotation() {
-		return new Quaternion(0.5f, 0.5f, -0.5f, 0.5f) * Input.gyro.attitude * new Quaternion(0, 0, 1, 0);
-	}
-
-	public static float getZRoll() {
-		Quaternion referenceRotation = Quaternion.identity;
-		Quaternion deviceRotation = DeviceRotation.Get();
-		Quaternion eliminationOfXY = Quaternion.Inverse(
-			Quaternion.FromToRotation(referenceRotation * Vector3.forward, 
-		                          deviceRotation * Vector3.forward)
-			);
-		Quaternion rotationZ = eliminationOfXY * deviceRotation;
-		return rotationZ.eulerAngles.z;
-	}
-}

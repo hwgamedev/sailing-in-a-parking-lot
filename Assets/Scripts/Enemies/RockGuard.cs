@@ -13,7 +13,7 @@ public class RockGuard : MonoBehaviour {
 	void Start () {
 		guard = gameObject.GetComponent<GuardCheck>();
 		patrol = gameObject.GetComponent<Patrol>();
-		Physics2D.IgnoreLayerCollision(20,5);
+		Physics2D.IgnoreLayerCollision(16,5);
 	}
 	
 	void Update () {

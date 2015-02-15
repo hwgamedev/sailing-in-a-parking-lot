@@ -10,19 +10,19 @@ public class swipe : MonoBehaviour {
 	
 	void Update () {
 		up = down = left = right = false;
-		Debug.Log ("a");
+		//Debug.Log ("a");
 		if (Input.touchCount == 0) 
 			return;
 		
 		if (Input.GetTouch(0).deltaPosition.sqrMagnitude != 0){
-			Debug.Log ("b");
+			//Debug.Log ("b");
 			if (swiping == false){
 				swiping = true;
 				lastPosition = Input.GetTouch(0).position;
 				return;
 			}
 			else{
-				Debug.Log ("c");
+				//Debug.Log ("c");
 				if (!eventSent) {
 					Vector2 direction = Input.GetTouch(0).position - lastPosition;
 					
