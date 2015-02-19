@@ -16,6 +16,9 @@ public class EnemyHealth : MonoBehaviour {
 	private GameObject healthBar;
     private GameObject[] chunks = new GameObject[3];
 
+    //knockback reversal
+    private float knockback;
+
 	// Use this for initialization
 	void Start () {
         chunks = Resources.LoadAll<GameObject>("Prefabs/" + chunkfolder);
@@ -37,7 +40,9 @@ public class EnemyHealth : MonoBehaviour {
 			blinkyElapsed += Time.deltaTime;
 		if (blinkyElapsed >= blinkyTime) {
 			sr.color = originalColor;
-			blinkyElapsed = -1;
+            blinkyElapsed = -1;
+            rigidbody2D.AddForce(new Vector2(-knockback, 0f), ForceMode2D.Impulse);
+
 		}
 		Vector3 htransform = healthBar.transform.position;
 		htransform.x = transform.position.x;
@@ -47,7 +52,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	}
 
-    public void dealDamage(float amount, float knockback)
+    public void dealDamage(float amount, float knockbackForce)
     {
         totalHealth -= amount;
         blinkyElapsed = 0;
@@ -57,8 +62,10 @@ public class EnemyHealth : MonoBehaviour {
 			die();
 
         }
+        knockback = knockbackForce;
+
         //bounceback
-        rigidbody2D.AddForce(new Vector2(knockback, 5f), ForceMode2D.Impulse);
+        rigidbody2D.AddForce(new Vector2(knockback, 0f), ForceMode2D.Impulse);
         healthBar.GetComponentInChildren<EnemyHealthBar>().updatePercentage(totalHealth / maxHealth * 1.0f);
 
 

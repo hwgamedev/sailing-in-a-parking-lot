@@ -16,10 +16,11 @@ public class WeaponHit : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col) {
 		if (col.gameObject.tag == "Enemy") {
 			int direction = 0;
-			if (transform.rotation.z * Mathf.Rad2Deg > 180)
-				direction = 1;
-			else
+            print("Sword angle: " + transform.rotation.z * Mathf.Rad2Deg);
+			if (transform.rotation.z * Mathf.Rad2Deg > 0)
 				direction = -1;
+			else
+				direction = 1;
 
 			float knockback = 250.0f;
 			//Extend damage here
