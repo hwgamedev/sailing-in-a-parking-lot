@@ -77,7 +77,7 @@ public class LifeManager : MonoBehaviour {
                     die();
                 }
                 invincibilityRemaining = invincibilityTime;
-                float xDirection = System.Math.Sign(rigidbody2D.velocity.x);
+                //float xDirection = System.Math.Sign(rigidbody2D.velocity.x);
                 rigidbody2D.AddForce(new Vector2(0, 5), ForceMode2D.Impulse);
             
 

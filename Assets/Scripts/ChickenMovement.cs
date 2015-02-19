@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ChickenMovement : MonoBehaviour {
 
-	private swipe swipeComponent;
+	//private swipe swipeComponent;
 
 	public Vector2 moving = new Vector2();
 	public float facingDirection = 1;
@@ -13,7 +13,7 @@ public class ChickenMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		swipeComponent = GetComponent<swipe> ();
+		//swipeComponent = GetComponent<swipe> ();
 	}
 	
 	// Update is called once per frame
@@ -28,6 +28,7 @@ public class ChickenMovement : MonoBehaviour {
 				noDragged++;
 		}
 		if (noDragged != 0) {
+            print("Stuff being dragged!"+noDragged);
 			return;
 
 		}
@@ -51,12 +52,13 @@ public class ChickenMovement : MonoBehaviour {
 		{
 			moving.y = -1;
 		}
-		if(System.Math.Abs (Input.acceleration.x*90) > 15) {
+		if(System.Math.Abs (Input.acceleration.x*90) > 5) {
 			moving.x = System.Math.Sign (Input.acceleration.x);
 			facingDirection = moving.x;
 		}
 
-        if (swipeComponent.up)
+        if(Input.touchCount > 0 && Input.GetTouch(0).position.x < Screen.width/2)
+        //if (swipeComponent.up)
         {
             if (!jumped)
             {

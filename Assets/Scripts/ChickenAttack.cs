@@ -43,10 +43,16 @@ public class ChickenAttack : MonoBehaviour {
 			}
 		}
 		else {
-			if(swipeComponent.left || swipeComponent.right || Input.GetKey ("space")) {
-				swipeComponent.swiping = false;
-				weaponDirection = GetComponent<ChickenMovement>().facingDirection;
-				createWeapon();
+            if ((Input.touchCount > 0 && Input.GetTouch(0).position.x > Screen.width / 2) || Input.GetKey("space"))
+            {
+            //if(swipeComponent.left || swipeComponent.right || Input.GetKey ("space")) {
+                if (GetComponent<ChickenMovement>().noDragged == 0)
+                {
+                    swipeComponent.swiping = false;
+                    weaponDirection = GetComponent<ChickenMovement>().facingDirection;
+                    createWeapon();
+                }
+
 			}
 		}
 	}

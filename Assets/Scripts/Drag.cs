@@ -9,12 +9,13 @@ public class Drag : MonoBehaviour {
      private Vector3 offset;
      Vector3 curScreenPoint;
      public Vector3 orginalPos;
-    private bool moved = false;
+    //private bool moved = false;
 
      void OnMouseDown()
      {
              offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-             
+
+             draggingObject = true;
      }
 
      void OnMouseDrag()
@@ -24,15 +25,22 @@ public class Drag : MonoBehaviour {
              transform.position = curPosition;
 
 		      draggingObject = true;
+              print(gameObject.name);
 
      }
 
 	void OnMouseUpAsButton() {
 		draggingObject = false;
+        transform.localPosition = orginalPos;
 
 	}
 
      void Update()
      {
+     }
+
+     void Start()
+     {
+         orginalPos = transform.localPosition;
      }
  }
